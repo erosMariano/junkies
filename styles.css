@@ -1,6 +1,6 @@
 body,
 html {
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -84,6 +84,33 @@ html {
   }
 }
 
+.container-image .instagram {
+  z-index: 100;
+  width: 135px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+  left: 14px;
+}
+
+.container-image .discord {
+  z-index: 100;
+  width: 135px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+  left: 257px;
+}
+
+.container-image .twwiter {
+  z-index: 100;
+  width: 111px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+  right: 9px;
+}
+
 .stroke {
   position: absolute;
   top: 51.5px;
@@ -136,6 +163,89 @@ html {
   }
   100% {
     background-position: -5726px 5px;
+  }
+}
+
+@media (max-width: 645px) {
+  .container-image {
+    width: 406px;
+    height: 312px;
+    overflow: hidden;
+  }
+  .container-home .molduraGeral {
+    width: 409px;
+    height: 319.42px;
+    left: -2.5px;
+  }
+  .stroke img {
+    width: 408px;
+    height: 188.62px;
+  }
+  .mask1 {
+    -webkit-mask-image: url("./moldura-letras-400.png");
+            mask-image: url("./moldura-letras-400.png");
+    top: 30px;
+    left: -1px;
+  }
+  .stroke {
+    width: 409px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 33px;
+  }
+  .container-image .instagram {
+    height: 29px;
+    width: 82px;
+  }
+  .container-image .discord {
+    left: 176px;
+    width: 76px;
+    height: 30px;
+  }
+  .container-image .twwiter {
+    width: 75px;
+    height: 29px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mask1 {
+    -webkit-mask-image: url(./moldura-letras-300.png);
+            mask-image: url(./moldura-letras-300.png);
+    top: 27px;
+    left: 1px;
+  }
+  .stroke {
+    width: 99%;
+    top: 28px;
+  }
+  .stroke img {
+    width: 100%;
+    height: 100%;
+  }
+  .container-home .molduraGeral {
+    width: 356px;
+    height: 285.42px;
+    left: -1px;
+  }
+  .container-image {
+    height: 237px;
+    width: 355px;
+    overflow: initial;
+  }
+  .container-image .instagram {
+    bottom: -43px;
+    left: 8px;
+  }
+  .container-image .discord {
+    left: 146px;
+    bottom: -43px;
+  }
+  .container-image .twwiter {
+    bottom: -43px;
+    width: 75px;
+    height: 29px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
