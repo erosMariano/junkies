@@ -14,9 +14,9 @@ html {
           mask-position: 0px 0px;
   background: #F74326;
   position: absolute;
-  top: 61px;
+  top: 50px;
   height: 328px;
-  left: 4px;
+  left: 1px;
 }
 
 .mask1 img {
@@ -46,7 +46,8 @@ html {
 }
 
 .container-image {
-  width: 696px;
+  width: 614.49px;
+  height: 482.61px;
   text-align: center;
   position: relative;
   background: url("./nft2.png");
@@ -54,10 +55,15 @@ html {
   background-repeat: no-repeat;
   -webkit-animation: animationBackground 20s linear infinite;
           animation: animationBackground 20s linear infinite;
+  background-color: #FCFCF5;
 }
 
 .container-image .molduraGeral {
   width: 100%;
+  position: relative;
+  left: -2px;
+  top: -3px;
+  z-index: 1;
 }
 
 @-webkit-keyframes animationBackground {
@@ -99,7 +105,8 @@ html {
 }
 
 .container-home .molduraGeral {
-  width: 100%;
+  width: 620.49px;
+  height: 488.61px;
 }
 
 @-webkit-keyframes backgroundPage {
@@ -122,8 +129,9 @@ html {
 
 .stroke {
   position: absolute;
-  top: 61px;
-  left: 4px;
+  top: 50px;
+  left: 2px;
+  width: 100%;
 }
 
 .stroke img {
