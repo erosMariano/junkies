@@ -1,0 +1,103 @@
+body,
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.mask1 {
+    mask-image: url("./moldura-letas.png");
+    mask-repeat: no-repeat;
+    mask-position: 0px 0px;
+    background: #F74326;
+    position: absolute;
+    top: 61px;
+    height: 328px;
+    left: 4px;
+
+    img {
+        position: relative;
+        top: -77px;
+        left: 0;
+        animation: animationFonte 20s linear infinite;
+
+        @keyframes animationFonte {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -1800px;
+            }
+        }
+
+    }
+}
+
+
+.container-image {
+    width: 696px;
+    text-align: center;
+    position: relative;
+    background: url("./nft2.png");
+    background-position: -1755px 5px;
+    background-repeat: no-repeat;
+    animation: animationBackground 20s linear infinite;
+
+    .molduraGeral {
+        width: 100%;
+    }
+
+    @keyframes animationBackground {
+        0% {
+            background-position: -1755px 5px;
+
+        }
+
+        100% {
+            background-position: 0px 5px;
+        }
+    }
+}
+
+.container-home {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #499B4F;
+    background-image: url(./nfts-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    animation: backgroundPage 30s linear infinite;
+
+    .molduraGeral {
+        width: 100%;
+    }
+
+    @keyframes backgroundPage {
+        0% {
+            background-position: 0px 0px;
+
+        }
+
+        100% {
+            background-position: -5726px 5px;
+        }
+    }
+}
+
+.stroke {
+    position: absolute;
+    top: 61px;
+    left: 4px;
+
+    img {
+        width: 100%;
+    }
+}

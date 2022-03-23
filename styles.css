@@ -1,0 +1,132 @@
+body,
+html {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.mask1 {
+  -webkit-mask-image: url("./moldura-letas.png");
+          mask-image: url("./moldura-letas.png");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: 0px 0px;
+          mask-position: 0px 0px;
+  background: #F74326;
+  position: absolute;
+  top: 61px;
+  height: 328px;
+  left: 4px;
+}
+
+.mask1 img {
+  position: relative;
+  top: -77px;
+  left: 0;
+  -webkit-animation: animationFonte 20s linear infinite;
+          animation: animationFonte 20s linear infinite;
+}
+
+@-webkit-keyframes animationFonte {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1800px;
+  }
+}
+
+@keyframes animationFonte {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1800px;
+  }
+}
+
+.container-image {
+  width: 696px;
+  text-align: center;
+  position: relative;
+  background: url("./nft2.png");
+  background-position: -1755px 5px;
+  background-repeat: no-repeat;
+  -webkit-animation: animationBackground 20s linear infinite;
+          animation: animationBackground 20s linear infinite;
+}
+
+.container-image .molduraGeral {
+  width: 100%;
+}
+
+@-webkit-keyframes animationBackground {
+  0% {
+    background-position: -1755px 5px;
+  }
+  100% {
+    background-position: 0px 5px;
+  }
+}
+
+@keyframes animationBackground {
+  0% {
+    background-position: -1755px 5px;
+  }
+  100% {
+    background-position: 0px 5px;
+  }
+}
+
+.container-home {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #499B4F;
+  background-image: url(./nfts-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: backgroundPage 30s linear infinite;
+          animation: backgroundPage 30s linear infinite;
+}
+
+.container-home .molduraGeral {
+  width: 100%;
+}
+
+@-webkit-keyframes backgroundPage {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -5726px 5px;
+  }
+}
+
+@keyframes backgroundPage {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -5726px 5px;
+  }
+}
+
+.stroke {
+  position: absolute;
+  top: 61px;
+  left: 4px;
+}
+
+.stroke img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
