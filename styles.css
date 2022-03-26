@@ -21,7 +21,7 @@ html {
 
 .mask1 img {
   position: relative;
-  top: -77px;
+  top: -9px;
   left: 0;
   -webkit-animation: animationFonte 20s linear infinite;
           animation: animationFonte 20s linear infinite;
@@ -32,7 +32,7 @@ html {
     left: 0;
   }
   100% {
-    left: -1800px;
+    left: -1500px;
   }
 }
 
@@ -41,17 +41,68 @@ html {
     left: 0;
   }
   100% {
-    left: -1800px;
+    left: -1500px;
   }
+}
+
+.input-img {
+  margin-top: 20px;
+  position: relative;
+}
+
+.input-img img {
+  width: 100%;
+}
+
+.input-img input {
+  position: absolute;
+  height: 47px;
+  width: 390px;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  color: #B5B5B5;
+  padding-left: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-top: 6px;
+}
+
+.input-img input ::-webkit-input-placeholder {
+  color: #B5B5B5;
+}
+
+.input-img input :-ms-input-placeholder {
+  color: #B5B5B5;
+}
+
+.input-img input ::-ms-input-placeholder {
+  color: #B5B5B5;
+}
+
+.input-img input ::placeholder {
+  color: #B5B5B5;
+}
+
+.input-img button {
+  position: absolute;
+  right: 0;
+  height: 56px;
+  width: 211px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .container-image {
   width: 614.49px;
-  height: 482.61px;
+  height: 433px;
   text-align: center;
   position: relative;
   background: url("./nft2.png");
-  background-position: -1755px 5px;
+  background-position: -1575px 5px;
   background-repeat: no-repeat;
   -webkit-animation: animationBackground 20s linear infinite;
           animation: animationBackground 20s linear infinite;
@@ -68,19 +119,19 @@ html {
 
 @-webkit-keyframes animationBackground {
   0% {
-    background-position: -1755px 5px;
+    background-position: -1575px 80px;
   }
   100% {
-    background-position: 0px 5px;
+    background-position: 0px 80px;
   }
 }
 
 @keyframes animationBackground {
   0% {
-    background-position: -1755px 5px;
+    background-position: -1575px 80px;
   }
   100% {
-    background-position: 0px 5px;
+    background-position: 0px 80px;
   }
 }
 
@@ -123,10 +174,15 @@ html {
 }
 
 .container-home {
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -134,47 +190,74 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(./nfts-page.png);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: backgroundPage 30s linear infinite;
-          animation: backgroundPage 30s linear infinite;
 }
 
 .container-home .molduraGeral {
   width: 617.49px;
-  height: 488.61px;
+  height: 437.61px;
   position: relative;
   left: -1.5px;
 }
 
-@-webkit-keyframes backgroundPage {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: -5726px 5px;
-  }
-}
-
-@keyframes backgroundPage {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: -5726px 5px;
-  }
-}
-
 @media (max-width: 645px) {
+  .input-img {
+    width: 409px;
+  }
+  .input-img input {
+    height: 27px;
+    width: 253px;
+    font-size: 19px;
+  }
+  .input-img button {
+    width: 35px;
+    height: 137px;
+  }
   .container-image {
     width: 406px;
-    height: 312px;
-    overflow: hidden;
+    height: 281px;
+  }
+  @-webkit-keyframes animationBackground {
+    0% {
+      background-position: -1575px 0px;
+    }
+    100% {
+      background-position: 0px 0px;
+    }
+  }
+  @keyframes animationBackground {
+    0% {
+      background-position: -1575px 0px;
+    }
+    100% {
+      background-position: 0px 0px;
+    }
+  }
+  .container-home {
+    background-image: url(./nfts-page.png);
+    -webkit-animation: backgroundPage 20s linear infinite;
+            animation: backgroundPage 20s linear infinite;
+  }
+  @-webkit-keyframes backgroundPage {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -5326px 5px;
+    }
+  }
+  @keyframes backgroundPage {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -5326px 5px;
+    }
   }
   .container-home .molduraGeral {
     width: 409px;
-    height: 319.42px;
+    height: 286.42px;
     left: -2.5px;
   }
   .stroke img {
@@ -192,7 +275,7 @@ html {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 33px;
+    top: 32px;
   }
   .container-image .instagram {
     height: 29px;
@@ -210,41 +293,56 @@ html {
 }
 
 @media (max-width: 500px) {
+  .input-img {
+    margin-top: -30px;
+    width: 351.5px;
+  }
+  .input-img input {
+    width: 214px;
+    height: 24px;
+    padding-top: 5px;
+    font-size: 1rem;
+  }
+  .input-img button {
+    width: 114px;
+    height: 30px;
+  }
   .mask1 {
     -webkit-mask-image: url(./moldura-letras-300.png);
             mask-image: url(./moldura-letras-300.png);
-    top: 27px;
+    top: 26px;
     left: 1px;
   }
   .stroke {
     width: 99%;
     top: 28px;
+    left: 50.24%;
   }
   .stroke img {
     width: 100%;
     height: 100%;
   }
   .container-home .molduraGeral {
-    width: 356px;
-    height: 285.42px;
-    left: -1px;
+    width: 353px;
+    height: 251.42px;
+    left: 0px;
   }
   .container-image {
     height: 237px;
-    width: 355px;
+    width: 352px;
     overflow: initial;
     top: -68px;
   }
   .container-image .instagram {
-    bottom: -43px;
+    bottom: -11px;
     left: 8px;
   }
   .container-image .discord {
     left: 146px;
-    bottom: -43px;
+    bottom: -11px;
   }
   .container-image .twwiter {
-    bottom: -43px;
+    bottom: -11px;
     width: 75px;
     height: 29px;
   }

@@ -17,7 +17,7 @@ html {
 
     img {
         position: relative;
-        top: -77px;
+        top: -9px;
         left: 0;
         animation: animationFonte 20s linear infinite;
 
@@ -27,23 +27,65 @@ html {
             }
 
             100% {
-                left: -1800px;
+                left: -1500px;
             }
         }
 
     }
 }
 
+.input-img {
+    margin-top: 20px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    input {
+        position: absolute;
+        height: 47px;
+        width: 390px;
+
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 25px;
+
+
+        color: #B5B5B5;
+        padding-left: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+
+        padding-top: 6px;
+
+        ::placeholder {
+            color: #B5B5B5;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        height: 56px;
+        width: 211px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
 
 .container-image {
     width: 614.49px;
-    height: 482.61px;
+    height: 433px;
 
 
     text-align: center;
     position: relative;
     background: url("./nft2.png");
-    background-position: -1755px 5px;
+    background-position: -1575px 5px;
     background-repeat: no-repeat;
     animation: animationBackground 20s linear infinite;
     background-color: #FCFCF5;
@@ -58,12 +100,12 @@ html {
 
     @keyframes animationBackground {
         0% {
-            background-position: -1755px 5px;
+            background-position: -1575px 80px;
 
         }
 
         100% {
-            background-position: 0px 5px;
+            background-position: 0px 80px;
         }
     }
 
@@ -111,6 +153,10 @@ html {
 
 
 .container-home {
+
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
     height: 100vh;
 
@@ -119,43 +165,73 @@ html {
     justify-content: center;
 
 
-    background-image: url(./nfts-page.png);
     background-repeat: no-repeat;
     background-size: cover;
 
 
-    animation: backgroundPage 30s linear infinite;
 
     .molduraGeral {
         width: 617.49px;
-        height: 488.61px;
+        height: 437.61px;
         position: relative;
         left: -1.5px;
-    }
-
-    @keyframes backgroundPage {
-        0% {
-            background-position: 0px 0px;
-
-        }
-
-        100% {
-            background-position: -5726px 5px;
-        }
     }
 }
 
 
 @media(max-width: 645px) {
+    .input-img {
+        width: 409px;
+
+        input {
+            height: 27px;
+            width: 253px;
+            font-size: 19px;
+        }
+
+        button {
+            width: 35px;
+            height: 137px;
+        }
+    }
+
     .container-image {
         width: 406px;
-        height: 312px;
-        overflow: hidden;
+        height: 281px;
+
+        @keyframes animationBackground {
+            0% {
+                background-position: -1575px 0px;
+
+            }
+
+            100% {
+                background-position: 0px 0px;
+            }
+        }
+    }
+
+    .container-home {
+        background-image: url(./nfts-page.png);
+
+        animation: backgroundPage 20s linear infinite;
+
+        @keyframes backgroundPage {
+            0% {
+                background-position: 0px 0px;
+
+            }
+
+            100% {
+                background-position: -5326px 5px;
+            }
+        }
+
     }
 
     .container-home .molduraGeral {
         width: 409px;
-        height: 319.42px;
+        height: 286.42px;
         left: -2.5px;
 
     }
@@ -175,7 +251,7 @@ html {
         width: 409px;
         left: 50%;
         transform: translateX(-50%);
-        top: 33px;
+        top: 32px;
     }
 
 
@@ -200,15 +276,35 @@ html {
 
 
 @media(max-width: 500px) {
+
+    .input-img {
+        margin-top: -30px;
+        width: 351.5px;
+
+        input {
+            width: 214px;
+            height: 24px;
+            padding-top: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 114px;
+            height: 30px;
+        }
+    }
+
+
     .mask1 {
         mask-image: url(./moldura-letras-300.png);
-        top: 27px;
+        top: 26px;
         left: 1px;
     }
 
     .stroke {
         width: 99%;
         top: 28px;
+        left: 50.24%;
 
         img {
             width: 100%;
@@ -217,32 +313,32 @@ html {
     }
 
     .container-home .molduraGeral {
-        width: 356px;
-        height: 285.42px;
-        left: -1px;
+        width: 353px;
+        height: 251.42px;
+        left: 0px;
     }
 
     .container-image {
         height: 237px;
-        width: 355px;
+        width: 352px;
         overflow: initial;
         top: -68px;
 
 
         .instagram {
 
-            bottom: -43px;
+            bottom: -11px;
             left: 8px;
         }
 
         .discord {
             left: 146px;
-            bottom: -43px;
+            bottom: -11px;
         }
 
 
         .twwiter {
-            bottom: -43px;
+            bottom: -11px;
             width: 75px;
             height: 29px;
         }
