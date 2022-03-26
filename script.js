@@ -23,8 +23,8 @@ if (numAleatorio == 1) {
 }
 
 if (window.innerWidth < 645) {
-    const molduraGeral = document.querySelector(".molduraGeral")
-    molduraGeral.src = "moldura-geral-400.png"
+    // const molduraGeral = document.querySelector(".molduraGeral")
+    // molduraGeral.src = "moldura-geral-400.png"
 
     const stroke = document.querySelector('.stroke-img')
     stroke.src = "stroke-400.png"
@@ -34,8 +34,8 @@ if (window.innerWidth < 645) {
 }
 
 if (window.innerWidth < 500) {
-    const molduraGeral = document.querySelector(".molduraGeral")
-    molduraGeral.src = "moldura-geral-300.png"
+    // const molduraGeral = document.querySelector(".molduraGeral")
+    // molduraGeral.src = "moldura-geral-300.png"
 
     const stroke = document.querySelector('.stroke-img')
     stroke.src = "stroke-300.png"
