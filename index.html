@@ -6,8 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    </style>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/hpBUNMMBqVNNb85I/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+
+        function chamarForm() {
+            SubForm()
+        }
+    </script>
 </head>
 
 <body>
@@ -35,21 +60,23 @@
 
 
 
-            <form class="input-img" action="https://formsubmit.co/erosmariano1@gmail.com" method="POST">
+            <form class="input-img" id="myForm">
+                <!-- action="https://formsubmit.co/erosmariano1@gmail.com" method="POST" -->
                 <div class="flex-input">
-                    <input type="email" name="email" placeholder="E-mail" required>
-                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email_user" placeholder="E-mail" required>
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
                     <!-- <input type="text" name="name" value="o email" style="display: none"> -->
-                    <input type="hidden" name="_next" value="http://localhost:5500/">
-                    <button type="submit"></button>
+                    <!-- <input type="hidden" name="_next" value="http://localhost:5500/"> -->
+                    <button onclick='chamarForm()' type="button"></button>
                 </div>
                 <img src="./input.png" alt="">
             </form>
+
         </div>
 
     </main>
-
     <script src="./script.js"></script>
+
 </body>
 
 </html>

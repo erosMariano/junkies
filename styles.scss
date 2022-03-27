@@ -23,7 +23,7 @@ html {
 
         @keyframes animationFonte {
             0% {
-                left: 0;
+                left: 0px;
             }
 
             100% {
@@ -64,7 +64,9 @@ html {
         ::placeholder {
             color: #B5B5B5;
         }
+
     }
+
 
     button {
         position: absolute;
@@ -85,7 +87,7 @@ html {
     text-align: center;
     position: relative;
     background: url("./nft2.png");
-    background-position: -1575px 5px;
+    background-position: -1113px 5px;
     background-repeat: no-repeat;
     animation: animationBackground 20s linear infinite;
     background-color: #FCFCF5;
@@ -100,8 +102,7 @@ html {
 
     @keyframes animationBackground {
         0% {
-            background-position: -1575px 80px;
-
+            background-position: -990px 80px;
         }
 
         100% {
@@ -201,7 +202,7 @@ html {
 
         @keyframes animationBackground {
             0% {
-                background-position: -1575px 0px;
+                background-position: -1075px 0px;
 
             }
 
@@ -218,7 +219,7 @@ html {
 
         @keyframes backgroundPage {
             0% {
-                background-position: 0px 0px;
+                background-position: -1000px 0px;
 
             }
 
@@ -278,7 +279,7 @@ html {
 @media(max-width: 500px) {
 
     .input-img {
-        margin-top: -30px;
+        margin-top: 20px;
         width: 351.5px;
 
         input {
@@ -322,7 +323,7 @@ html {
         height: 237px;
         width: 352px;
         overflow: initial;
-        top: -68px;
+        top: 0px;
 
 
         .instagram {
