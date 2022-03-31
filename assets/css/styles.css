@@ -6,8 +6,8 @@ html {
 }
 
 .mask1 {
-  -webkit-mask-image: url("./moldura-letas.png");
-          mask-image: url("./moldura-letas.png");
+  -webkit-mask-image: url("../img/moldura-letas.png");
+          mask-image: url("../img/moldura-letas.png");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: 0px 0px;
@@ -101,7 +101,7 @@ html {
   height: 433px;
   text-align: center;
   position: relative;
-  background: url("./nft2.png");
+  background: url("../img/nft2.png");
   background-position: -1113px 5px;
   background-repeat: no-repeat;
   -webkit-animation: animationBackground 20s linear infinite;
@@ -235,7 +235,7 @@ html {
     }
   }
   .container-home {
-    background-image: url(./nfts-page.png);
+    background-image: url(../img/nfts-page.png);
     -webkit-animation: backgroundPage 20s linear infinite;
             animation: backgroundPage 20s linear infinite;
   }
@@ -265,8 +265,8 @@ html {
     height: 188.62px;
   }
   .mask1 {
-    -webkit-mask-image: url("./moldura-letras-400.png");
-            mask-image: url("./moldura-letras-400.png");
+    -webkit-mask-image: url("../img/moldura-letras-400.png");
+            mask-image: url("../img/moldura-letras-400.png");
     top: 30px;
     left: -1px;
   }
@@ -308,8 +308,8 @@ html {
     height: 30px;
   }
   .mask1 {
-    -webkit-mask-image: url(./moldura-letras-300.png);
-            mask-image: url(./moldura-letras-300.png);
+    -webkit-mask-image: url(../img/moldura-letras-300.png);
+            mask-image: url(../img/moldura-letras-300.png);
     top: 26px;
     left: 1px;
   }

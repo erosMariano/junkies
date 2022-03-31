@@ -49,12 +49,12 @@ if (window.innerWidth > 1200) {
 }
 if (window.innerWidth < 645) {
     const stroke = document.querySelector('.stroke-img')
-    stroke.src = "stroke-400.png"
+    stroke.src = "./assets/img/stroke-300.png"
 }
 
 if (window.innerWidth < 500) {
     const stroke = document.querySelector('.stroke-img')
-    stroke.src = "stroke-300.png"
+    stroke.src = "./assets/img/stroke-300.png"
 }
 
 

@@ -6,7 +6,7 @@ html {
 }
 
 .mask1 {
-    mask-image: url("./moldura-letas.png");
+    mask-image: url("../img/moldura-letas.png");
     mask-repeat: no-repeat;
     mask-position: 0px 0px;
     background: #F74326;
@@ -86,7 +86,7 @@ html {
 
     text-align: center;
     position: relative;
-    background: url("./nft2.png");
+    background: url("../img/nft2.png");
     background-position: -1113px 5px;
     background-repeat: no-repeat;
     animation: animationBackground 20s linear infinite;
@@ -213,7 +213,7 @@ html {
     }
 
     .container-home {
-        background-image: url(./nfts-page.png);
+        background-image: url(../img/nfts-page.png);
 
         animation: backgroundPage 20s linear infinite;
 
@@ -243,7 +243,7 @@ html {
     }
 
     .mask1 {
-        mask-image: url("./moldura-letras-400.png");
+        mask-image: url("../img/moldura-letras-400.png");
         top: 30px;
         left: -1px;
     }
@@ -297,7 +297,7 @@ html {
 
 
     .mask1 {
-        mask-image: url(./moldura-letras-300.png);
+        mask-image: url(../img/moldura-letras-300.png);
         top: 26px;
         left: 1px;
     }

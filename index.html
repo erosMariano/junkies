@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Surf Junkie</title>
+
+
+    <meta property="og:title" content="Surf Junkie" />
+    <meta property="og:url" content="https://surfjunkieclub.io/"/>
+    <meta property="og:image" content="./assets/img/icone.png" />
+
+
+
+    <meta name="description" content="An NFT club created for the surf addicts, and only for them.">
+    <link rel="icon" href="" type="image/png" sizes="512x512">
+
+
+    <link href="./assets/img/icone2.png" rel="icon" type="image/png" sizes="32x32" />
+    <link href="./assets/img/icone.png" rel="icon" type="image/png" sizes="512x512" />
+
+    <link rel="icon" sizes="192x192" href="./assets/img/icone192.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icone.ico">
+    <link rel="apple-touch-icon-precomposed" href="./assets/img/icone.png">
+
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/img/icone.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/icone.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/img/icone.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/icone.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/icone.png">
+    <link rel="apple-touch-icon" href="./assets/img/icone.png" />
+
+    <link rel="apple-touch-icon-precomposed" href="./assets/img/icone.png">
+    <link rel="icon" href="./assets/img/icone.png" sizes="32x32">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         function SubForm() {
             $.ajax({
-                url: "https://api.apispreadsheets.com/data/hpBUNMMBqVNNb85I/",
+                url: "https://api.apispreadsheets.com/data/G0CkmsSiFSTnSKdd/",
                 type: "post",
                 data: $("#myForm").serializeArray(),
                 success: function () {
-                    alert("Form Data Submitted :)")
+                    alert("Form enviado!!")
                 },
                 error: function () {
                     alert("There was an error :(")
@@ -39,14 +71,14 @@
     <main>
         <div class="container-home">
             <div class="container-image">
-                <img src="./moldura-geral.png" alt="" srcset="" class="molduraGeral">
+                <img src="./assets/img/moldura-geral.png" alt="" srcset="" class="molduraGeral">
 
                 <div class="mask1">
-                    <img src="./nfts.png" alt="Cinque Terre" class="img">
+                    <img src="./assets/img/nfts.png" alt="Cinque Terre" class="img">
                 </div>
 
                 <div class="stroke">
-                    <img src="./stroke.png" class="stroke-img" alt="">
+                    <img src="./assets/img/stroke.png" class="stroke-img" alt="">
                 </div>
 
 
@@ -69,13 +101,13 @@
                     <!-- <input type="hidden" name="_next" value="http://localhost:5500/"> -->
                     <button onclick='chamarForm()' type="button"></button>
                 </div>
-                <img src="./input.png" alt="">
+                <img src="./assets/img/input.png" alt="">
             </form>
 
         </div>
 
     </main>
-    <script src="./script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
