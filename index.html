@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surf Junkie</title>
+    <title>WELCOME TO THE SURF JUNKIE CLUB</title>
 
 
-    <meta property="og:title" content="Surf Junkie" />
-    <meta property="og:url" content="https://surfjunkieclub.io/"/>
-    <meta property="og:image" content="./assets/img/icone.png" />
+    <meta property="og:title" content="WELCOME TO THE SURF JUNKIE CLUB" />
+    <meta property="og:url" content="https://surfjunkieclub.io/" />
+    <meta property="og:image" content="./assets/img/icone1200.png" />
 
 
 
-    <meta name="description" content="An NFT club created for the surf addicts, and only for them.">
-    <link rel="icon" href="" type="image/png" sizes="512x512">
+    <meta name="description" content="A global surf club that will help you get the most out of surfing. 
+        #AlwaysHighOnSaltWater">
+    <link rel="icon" href="icone.png" type="image/png" sizes="512x512">
 
 
-    <link href="./assets/img/icone2.png" rel="icon" type="image/png" sizes="32x32" />
+    <link href="./assets/img/icone2.jpeg" rel="icon" type="image/jpeg" sizes="32x32" />
     <link href="./assets/img/icone.png" rel="icon" type="image/png" sizes="512x512" />
 
     <link rel="icon" sizes="192x192" href="./assets/img/icone192.png">
@@ -35,7 +36,7 @@
     <link rel="apple-touch-icon" href="./assets/img/icone.png" />
 
     <link rel="apple-touch-icon-precomposed" href="./assets/img/icone.png">
-    <link rel="icon" href="./assets/img/icone.png" sizes="32x32">
+    <link rel="icon" href="./assets/img/icone2.png" sizes="32x32">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,13 +48,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
+        if (window.location.href == 'http://surfjunkieclub.io/') {
+            window.location.href = 'https://surfjunkieclub.io/'
+        }
+
         function SubForm() {
             $.ajax({
-                url: "https://api.apispreadsheets.com/data/G0CkmsSiFSTnSKdd/",
+                url: 'https://api.apispreadsheets.com/data/HjsVbqSci3jjHbNy/',
                 type: "post",
                 data: $("#myForm").serializeArray(),
                 success: function () {
-                    alert("Form enviado!!")
+                    ativarPreForm()
                 },
                 error: function () {
                     alert("There was an error :(")
@@ -61,9 +66,6 @@
             });
         }
 
-        function chamarForm() {
-            SubForm()
-        }
     </script>
 </head>
 
@@ -85,7 +87,7 @@
 
                 <a href="https://instagram.com/surfjunkieclub?utm_medium=copy_link" target="_blank"
                     class="instagram"></a>
-                <a href="https://discord.gg/TEnxJGph" target="_blank" class="discord"></a>
+                <a href="https://discord.gg/SyD22Xh95U" target="_blank" class="discord"></a>
                 <a href="https://twitter.com/SurfJunkieClub" target="_blank" class="twwiter"></a>
             </div>
 
@@ -93,15 +95,14 @@
 
 
             <form class="input-img" id="myForm">
-                <!-- action="https://formsubmit.co/erosmariano1@gmail.com" method="POST" -->
                 <div class="flex-input">
-                    <input type="email" name="email_user" placeholder="E-mail" required>
-                    <!-- <input type="hidden" name="_captcha" value="false"> -->
-                    <!-- <input type="text" name="name" value="o email" style="display: none"> -->
-                    <!-- <input type="hidden" name="_next" value="http://localhost:5500/"> -->
+                    <input type="email" name="email_user" class="email_user" placeholder="E-mail" required>
                     <button onclick='chamarForm()' type="button"></button>
                 </div>
-                <img src="./assets/img/input.png" alt="">
+                <img src="./assets/img/input.png" alt="" class="img-input">
+                <img src="./assets/img/input-concluido.png" class="img-input inputPos">
+
+                <div class="div-loading"></div>
             </form>
 
         </div>

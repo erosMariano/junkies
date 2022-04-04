@@ -201,6 +201,38 @@ html {
   left: -1.5px;
 }
 
+.div-loading {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 100%;
+  border: 3px solid #FF4139;
+  border-left-color: transparent;
+  -webkit-animation: animationLoader 1s linear infinite;
+          animation: animationLoader 1s linear infinite;
+  position: relative;
+  left: 0px;
+  display: none;
+}
+
+.inputPos {
+  display: none;
+}
+
+@-webkit-keyframes animationLoader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animationLoader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 645px) {
   .input-img {
     width: 409px;
@@ -211,8 +243,14 @@ html {
     font-size: 19px;
   }
   .input-img button {
+    height: 35px;
+    width: 137px;
+  }
+  .div-loading {
+    position: relative;
+    left: 163px;
     width: 35px;
-    height: 137px;
+    height: 35px;
   }
   .container-image {
     width: 406px;
@@ -293,6 +331,11 @@ html {
 }
 
 @media (max-width: 500px) {
+  .div-loading {
+    left: 156px;
+    width: 25px;
+    height: 25px;
+  }
   .input-img {
     margin-top: 20px;
     width: 351.5px;
