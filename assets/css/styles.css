@@ -5,6 +5,10 @@ html {
   margin: 0;
 }
 
+#mc_embed_signup {
+  display: none;
+}
+
 .mask1 {
   -webkit-mask-image: url("../img/moldura-letas.png");
           mask-image: url("../img/moldura-letas.png");
@@ -45,13 +49,18 @@ html {
   }
 }
 
+.spanError {
+  color: red;
+  font-family: 'Poppins';
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+}
+
 .input-img {
   margin-top: 20px;
   position: relative;
-}
-
-.input-img img {
-  width: 100%;
 }
 
 .input-img input {
@@ -68,6 +77,7 @@ html {
   border: none;
   outline: none;
   padding-top: 6px;
+  z-index: 10;
 }
 
 .input-img input ::-webkit-input-placeholder {
@@ -94,6 +104,7 @@ html {
   border: none;
   background: none;
   cursor: pointer;
+  z-index: 10;
 }
 
 .container-image {
@@ -215,10 +226,6 @@ html {
   display: none;
 }
 
-.inputPos {
-  display: none;
-}
-
 @-webkit-keyframes animationLoader {
   to {
     -webkit-transform: rotate(360deg);
@@ -236,6 +243,9 @@ html {
 @media (max-width: 645px) {
   .input-img {
     width: 409px;
+  }
+  .input-img img {
+    width: 100%;
   }
   .input-img input {
     height: 27px;

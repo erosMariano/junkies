@@ -1,3 +1,87 @@
+const buttonMailChimp = document.querySelector("#mc-embedded-subscribe")
+const inputMailChimp = document.querySelector("#mce-EMAIL")
+
+
+const myInput = document.querySelector("#myInput")
+const myBtn = document.querySelector(".btnChamarForm")
+const myForm = document.querySelector("#myForm");
+
+
+const loader = document.querySelector(".div-loading");
+const imagem1Form = document.querySelector(".img-input")
+const divForm = document.querySelector("#myForm .flex-input")
+
+const spanError = `<div class="spanError">Input invalid</div>`
+
+myInput.addEventListener("keyup", () => {
+    inputMailChimp.value = myInput.value
+
+    if (document.querySelector(".spanError")){
+        document.querySelector(".spanError").style.display = "none"
+    }
+})
+myBtn.addEventListener("click", () => {
+    chamarForm()
+})
+
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+function ativarPreForm() {
+    loader.style.display = "none"
+
+    setTimeout(() => {
+        const imagem1Form = document.querySelector(".img-input")
+        imagem1Form.style.display = "block"
+        imagem1Form.src = "./assets/img/input-concluido.png"
+
+        myInput.style.display = "none"
+        myBtn.style.display = "none"
+    })
+}
+
+
+
+function chamarForm() {
+    loader.style.display = "block"
+
+    divForm.style.display = "none"
+    imagem1Form.style.display = "none"
+    myBtn.style.display = "none"
+
+
+
+    if (validateEmail(inputMailChimp.value) === false) {
+        setTimeout(() => {
+            imagem1Form.style.display = "block"
+            divForm.style.display = "block"
+            myBtn.style.display = "block"
+            loader.style.display = "none"
+            myForm.insertAdjacentHTML("beforeend", spanError)
+        }, 1000)
+    } else {
+        buttonMailChimp.click()
+        ativarPreForm()
+        imagem1Form.style.display = "none"
+    }
+}
+
+
+myForm.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        chamarForm()
+    }
+});
+
+
+
+
+
+
 const containerImage = document.querySelector(".container-home")
 
 if (window.innerWidth > 1200) {
@@ -65,36 +149,3 @@ if (window.innerWidth < 500) {
 
 
 
-const divForm = document.querySelector("#myForm .flex-input")
-const imagem1Form = document.querySelector(".img-input")
-const buttonForm = document.querySelector("#myForm button")
-const loader = document.querySelector(".div-loading");
-const inputPosLoading = document.querySelector(".inputPos")
-
-
-
-function ativarPreForm() {
-    loader.style.display = "none"
-    inputPosLoading.style.display = "block"
-}
-
-function chamarForm() {
-    const inputForm = document.querySelector(".email_user");
-    loader.style.display = "block"
-
-    divForm.style.display = "none"
-    imagem1Form.style.display = "none"
-    buttonForm.style.display = "none"
-
-    if (inputForm.value === "") {
-        setTimeout(() => {
-            divForm.style.display = "block"
-            imagem1Form.style.display = "block"
-            buttonForm.style.display = "block"
-            loader.style.display = "none"
-            alert("Empty input")
-        }, 1000)
-    } else {
-        SubForm()
-    }
-}

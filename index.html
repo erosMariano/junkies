@@ -14,8 +14,7 @@
 
 
 
-    <meta name="description" content="A global surf club that will help you get the most out of surfing. 
-        #AlwaysHighOnSaltWater">
+    <meta name="description" content="A global surf club created to grant you access to the good stuff.">
     <link rel="icon" href="icone.png" type="image/png" sizes="512x512">
 
 
@@ -45,31 +44,59 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR6PCBWLED"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GR6PCBWLED');
+    </script>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         if (window.location.href == 'http://surfjunkieclub.io/') {
             window.location.href = 'https://surfjunkieclub.io/'
         }
-
-        function SubForm() {
-            $.ajax({
-                url: 'https://api.apispreadsheets.com/data/HjsVbqSci3jjHbNy/',
-                type: "post",
-                data: $("#myForm").serializeArray(),
-                success: function () {
-                    ativarPreForm()
-                },
-                error: function () {
-                    alert("There was an error :(")
-                }
-            });
-        }
-
     </script>
 </head>
 
 <body>
+
+    <div id="mc_embed_signup">
+        <form
+            action="https://surfjunkieclub.us14.list-manage.com/subscribe/post?u=94f4bf6a6a60d3133cb2b4f37&amp;id=9e23a33b67"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_94f4bf6a6a60d3133cb2b4f37_9e23a33b67" tabindex="-1" value=""></div>
+                <div class="optionalParent">
+                    <div class="clear foot">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                            class="button">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
     <main>
         <div class="container-home">
             <div class="container-image">
@@ -96,18 +123,22 @@
 
             <form class="input-img" id="myForm">
                 <div class="flex-input">
-                    <input type="email" name="email_user" class="email_user" placeholder="E-mail" required>
-                    <button onclick='chamarForm()' type="button"></button>
+                    <input type="email" name="email_user" class="email_user" id="myInput" placeholder="E-mail" required>
+                    <button class="btnChamarForm" type="button"></button>
                 </div>
                 <img src="./assets/img/input.png" alt="" class="img-input">
-                <img src="./assets/img/input-concluido.png" class="img-input inputPos">
-
                 <div class="div-loading"></div>
+
+                
             </form>
-
         </div>
-
     </main>
+
+
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script
+        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     <script src="./assets/js/script.js"></script>
 
 </body>
