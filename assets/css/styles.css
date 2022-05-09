@@ -124,8 +124,8 @@ html {
   width: 100%;
   position: relative;
   left: -1px;
-  top: -3px;
   z-index: 1;
+  top: -1px;
 }
 
 @-webkit-keyframes animationBackground {
@@ -151,7 +151,7 @@ html {
   width: 135px;
   height: 48px;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   left: 14px;
 }
 
@@ -160,7 +160,7 @@ html {
   width: 135px;
   height: 48px;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   left: 257px;
 }
 
@@ -169,7 +169,7 @@ html {
   width: 111px;
   height: 48px;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   right: 9px;
 }
 
@@ -372,8 +372,10 @@ html {
     left: 50.24%;
   }
   .stroke img {
-    width: 100%;
+    width: 101%;
     height: 100%;
+    left: -1px;
+    position: relative;
   }
   .container-home .molduraGeral {
     width: 353px;
