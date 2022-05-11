@@ -245,7 +245,7 @@ html {
     width: 409px;
   }
   .input-img img {
-    width: 100%;
+    width: 101%;
   }
   .input-img input {
     height: 27px;
@@ -403,15 +403,3 @@ html {
   }
 }
 /*# sourceMappingURL=styles.css.map */
-
-.texto{
-  position: relative;
-}
-.texto::after{
-  content: "Meu texto adicional";
-
-
-  /* position: absolute; */
-  /* top: 0px; */
-  /* left: 0px; */
-}
