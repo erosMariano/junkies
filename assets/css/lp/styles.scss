@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'futura passata';
+    src: url("../../font/FuturaPassata-DISPLAY.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body>iframe {
+    display: none;
+}
+
+.hero {
+    img {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 1328px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'futura passata', sans-serif;
+    background: #fff;
+    border: 3px solid #000;
+    font-size: 30px;
+    width: fit-content;
+    margin-bottom: 70px;
+
+    span {
+        border-right: 3px solid #000;
+        padding: 0 10px;
+    }
+
+    p {
+        display: inline-block;
+        padding-left: 12px;
+        padding-right: 17px;
+    }
+}
+
+.welcomeBreak {
+    overflow-x: hidden;
+
+    div {
+        background-image: url("../../img/lp/welcome.png");
+        height: 80px;
+        animation: 15s welcomeImg linear infinite;
+        background-repeat: repeat-x;
+        position: relative;
+    }
+
+    @keyframes welcomeImg {
+        0% {
+            background-position-x: 0px;
+        }
+
+        100% {
+            background-position-x: 2164px;
+        }
+    }
+}
+
+.bannerNFTS {
+
+    div {
+        background-image: url("../../img/lp/bannerNFTs.png");
+        height: 385.99px;
+        animation: 10s bannerNFT linear infinite alternate;
+        background-repeat: repeat-x;
+        position: relative;
+    }
+
+    @keyframes bannerNFT {
+        0% {
+            background-position-x: 1891px;
+        }
+
+        100% {
+            background-position-x: 0%;
+        }
+    }
+}
+
+.ourVision {
+    margin-top: -6px;
+    padding-top: 75px;
+    padding-bottom: 26px;
+    background: #A4CFF6;
+
+    p {
+        font-family: 'futura passata', sans-serif;
+        font-size: 50px;
+    }
+}
+
+.socialMedias {
+    font-family: 'futura passata', sans-serif;
+    padding-top: 82px;
+    background: #A4CFF6;
+    position: relative;
+
+    .buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .onda {
+        width: 100%;
+        margin-top: -137px;
+        position: relative;
+        top: 5px;
+    }
+
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #FFFD09;
+        border: 3px solid #000000;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+
+    }
+}
+
+.informations {
+    padding: 70px 0;
+    background: #0062E1;
+
+    .card {
+        display: flex;
+        margin-bottom: 62px;
+    }
+
+    .card p,
+    img {
+        border: 3px solid #000;
+    }
+
+    .card p {
+        font-family: sans-serif;
+        background: #fff;
+        border-right: 0;
+        font-size: 31.18px;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+    }
+
+    .card.reverse p {
+        border: 3px solid #000;
+        border-left: 0px;
+    }
+
+    .card.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+
+.faq {
+    overflow-x: hidden;
+
+    div {
+        background-image: url("../../img/lp/faq.png");
+        height: 80px;
+        animation: 15s faq linear infinite alternate;
+        background-repeat: repeat-x;
+        position: relative;
+        background-position: center;
+    }
+
+    @keyframes faq {
+        0% {
+            background-position-x: 0;
+        }
+
+        100% {
+            background-position-x: 2388px;
+        }
+    }
+}
+
+
+
+.accordion {
+    width: 100%;
+    font-family: 'futura passata',
+        sans-serif;
+
+    .accordion-item {
+        background: #FBF801;
+        color: #111;
+        font-size: 43px;
+        border-top: 3px solid #000;
+    }
+
+    .accordion-item:last-child {
+        border-bottom: 3px solid #000;
+    }
+
+    .accordion-item.rosa {
+        background: #FF39BB;
+    }
+
+    .accordion-item-header {
+        padding: .5rem 3rem .5rem 1rem;
+        min-height: 3.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .accordion-item-header::after {
+        content: url("/assets/img/lp/plus.png");
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        transition: .2s linear;
+    }
+
+    .accordion-item-header.active::after {
+        transform: rotate(45deg);
+    }
+
+
+
+    .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .2s ease-out;
+    }
+
+    .accordion-item-body-content {
+        padding: 1rem;
+        border-top: 1px solid;
+        border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    }
+}
+
+.advancedFaq {
+    overflow-x: hidden;
+
+    div {
+        background-image: url("../../img/lp/advancedFaq.png");
+        height: 80px;
+        animation: 15s advancedFaq linear infinite alternate;
+        background-repeat: repeat-x;
+        position: relative;
+        background-position: center;
+    }
+
+    @keyframes advancedFaq {
+        0% {
+            background-position-x: 1560px;
+        }
+
+        100% {
+            background-position-x: 0px;
+        }
+    }
+}
+
+.accordioGreen {
+    .accordion-item {
+        background: #B5FF6B;
+    }
+
+    .accordion-item.blue {
+        background: #00B9FF;
+    }
+}
+
+.barrels {
+    overflow-x: hidden;
+
+    div {
+        background-image: url("../../img/lp/barrels.png");
+        height: 80px;
+        animation: 15s barrels linear infinite;
+        background-repeat: repeat-x;
+        position: relative;
+        background-position: center;
+    }
+
+    @keyframes barrels {
+        0% {
+            background-position-x: 0%;
+        }
+
+        100% {
+            background-position-x: 1703px;
+        }
+    }
+}
+
+.mintDay {
+    margin-top: -36px;
+    
+    .mintDayImg,
+    .mintDayImg2 {
+        height: 76px;
+        background-image: url("../../img/lp/mintDay.png");
+        animation: 15s mintDay linear infinite;
+
+    }
+
+    .mintDayImg2 {
+        animation: 15s mintDay2 linear infinite;
+        margin-top: -28px;
+    }
+
+    @keyframes mintDay {
+        0% {
+            background-position-x: 100%;
+        }
+
+        100% {
+            background-position-x: 0%;
+        }
+    }
+
+    @keyframes mintDay2 {
+        0% {
+            background-position-x: 0%;
+        }
+
+        100% {
+            background-position-x: 100%;
+        }
+    }
+}
+
+.NFTSContainer {
+    margin-top: -3px;
+
+    div {
+        height: 378px;
+        background-image: url("../../img/lp/bannerNFTs2.png")
+    }
+
+    div:nth-child(1) {
+        background-position-x: -84px;
+        animation: 15s bannerNFT linear infinite alternate;
+
+    }
+
+    div:nth-child(2) {
+        background-position-x: 513px;
+        animation: 15s bannerNFT2 linear infinite;
+
+    }
+
+    @keyframes bannerNFT {
+        0% {
+            background-position-x: 1917px;
+        }
+
+        100% {
+            background-position-x: 0%;
+        }
+    }
+
+    @keyframes bannerNFT2 {
+        0% {
+            background-position-x: 0%;
+        }
+
+        100% {
+            background-position-x: 1917px;
+        }
+    }
+}
+
+footer {
+    padding: 24px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .socialMediasFooter {
+        display: flex;
+        gap: 24px;
+    }
+
+    .socialMediasFooter a {
+        img {
+            width: 30px;
+        }
+    }
+
+    p {
+        font-family: 'Futura Passata', sans-serif;
+
+        font-size: 35px;
+    }
+}
