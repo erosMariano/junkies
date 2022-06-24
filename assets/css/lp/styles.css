@@ -12,6 +12,10 @@
   font-family: 'futura passata', sans-serif;
 }
 
+.hero img {
+  width: 100%;
+}
+
 .hidden {
   overflow-x: hidden;
 }
@@ -72,6 +76,13 @@ body > iframe {
   border-bottom: 2px solid #000;
   overflow-x: hidden;
   background: #fff;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .marquee-text {
@@ -82,6 +93,9 @@ body > iframe {
   color: #000;
   -webkit-animation: scroll 10s linear infinite;
           animation: scroll 10s linear infinite;
+  position: relative;
+  top: -1px;
+  letter-spacing: -2px;
 }
 
 .marquee-text:before {
@@ -94,7 +108,6 @@ body > iframe {
 .marquee.value,
 .marquee.roadmap,
 .marquee.joinUsMarquee,
-.marquee.faq,
 .marquee.real {
   border-top: 2px solid #000;
 }
@@ -135,6 +148,26 @@ body > iframe {
   border-top: 0;
 }
 
+.marquee-text.junkieClub,
+.marquee-text.realArt {
+  position: relative;
+  top: 1px;
+}
+
+.marquee-text.realArt {
+  position: relative;
+  top: 1px;
+}
+
+.marquee.theNFT {
+  border-bottom: 2px solid #000 !important;
+}
+
+.marquee-text.theNFT {
+  position: relative;
+  top: 1px;
+}
+
 .marquee-text.mintDay {
   font-size: 16px;
   border-left: 2px solid #000;
@@ -148,6 +181,10 @@ body > iframe {
 
 .marquee-text.mintDay:before {
   content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY ";
+}
+
+.marquee.roadmap {
+  border-bottom: 0;
 }
 
 @-webkit-keyframes scroll {
@@ -173,9 +210,11 @@ body > iframe {
 .joinUs p {
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 94%;
   color: #000000;
+  text-align: justify;
+  letter-spacing: -2px;
 }
 
 .btn-join {
@@ -191,15 +230,16 @@ body > iframe {
   margin-top: 33px;
   font-size: 22px;
   background: #FFFD09;
-  border: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   color: #000;
   text-decoration: none;
   max-width: 127px;
+  height: 38px;
 }
 
 .cardsNFT {
   padding-top: 49px;
-  padding-bottom: 46px;
   background-color: #0062E1;
 }
 
@@ -238,6 +278,10 @@ body > iframe {
   padding: 21px 21px 21px 24px;
 }
 
+.cardsNFT .textInner p {
+  font-family: sans-serif;
+}
+
 .greenText {
   padding: 30px 46px 34px 48px;
   background: #B5FF6B;
@@ -260,14 +304,13 @@ body > iframe {
 }
 
 .porcentagensNFT::after {
-  content: "";
+  content: url("../../img/lp/strokeLateral.svg");
   background: transparent;
   height: 3550px;
   width: 3px;
   position: absolute;
   left: 5px;
   top: 65px;
-  border-right: 3px dashed #000000;
 }
 
 .porcentagensNFT .card {
@@ -325,6 +368,7 @@ body > iframe {
 .form {
   padding-top: 37px;
   padding-bottom: 49px;
+  background-color: #00B9FF;
 }
 
 .form p {
@@ -386,7 +430,7 @@ body > iframe {
 }
 
 .accordion {
-  background: red;
+  margin-top: -1px;
   width: 100%;
   font-family: 'futura passata', sans-serif;
   overflow-x: hidden;
@@ -456,6 +500,7 @@ body > iframe {
   overflow: hidden;
   -webkit-transition: max-height .2s ease-out;
   transition: max-height .2s ease-out;
+  font-family: sans-serif;
 }
 
 .accordion .accordion-item-body.type1 {
@@ -510,6 +555,7 @@ body > iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: sans-serif;
 }
 
 .accordion .accordion-item-body.type3 img {
@@ -550,6 +596,7 @@ body > iframe {
 .accordion .accordion-item-body-content {
   padding: 1rem;
   padding-left: 55px;
+  font-family: sans-serif;
 }
 
 .accordioGreen .accordion-item {
@@ -570,6 +617,7 @@ body > iframe {
   .accordion .accordion-item-header {
     font-size: 18px;
     padding-left: 35px;
+    padding-right: 40px;
   }
   .accordion .accordion-item-header span {
     font-size: 10px;
@@ -577,9 +625,10 @@ body > iframe {
     margin-right: 0;
     position: absolute;
     left: 10px;
+    top: 19px;
   }
   .accordion .accordion-item-header::after {
-    content: url("../../img/lp/plusMobile.svg");
+    content: url("../../img/lp/plusMobile.png");
     margin-top: -8px;
   }
   .accordion .accordion-item-header.type3,
@@ -589,6 +638,7 @@ body > iframe {
   .accordion .accordion-item-body-content {
     font-size: 16px;
     padding-left: 34px;
+    font-family: sans-serif;
   }
   .accordion .type1 .accordion-item-body-content {
     padding-top: 18px;
@@ -640,5 +690,13 @@ body > iframe {
   text-transform: uppercase;
   color: #000000;
   margin: 0 16px;
+}
+
+.mintDay {
+  text-align: center;
+  background: #00F89E;
+  border-bottom: 2px solid #000;
+  font-size: 16px;
+  line-height: 34px;
 }
 /*# sourceMappingURL=styles.css.map */
