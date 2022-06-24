@@ -7,6 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'futura passata',
+        sans-serif;
+
+}
+
+.hidden {
+    overflow-x: hidden;
 }
 
 html {
@@ -17,58 +24,23 @@ body>iframe {
     display: none;
 }
 
-.hero {
-    img {
-        width: 100%;
-    }
-}
 
 .container {
-    width: 1780px;
-    margin: 0 auto;
+    padding: 0 25px;
 }
 
-.title {
-    font-family: 'futura passata', sans-serif;
-    background: #fff;
-    border: 3px solid #000;
-    font-size: 71px;
-    width: fit-content;
-    margin-bottom: 70px;
-
-    h2 {
-        display: flex;
-
-    }
-
-    span {
-        border-right: 3px solid #000;
-        padding: 0 10px;
-        font-size: 84px;
-
-    }
-
-    p {
-        font-size: 84px;
-        display: inline-block;
-        padding-left: 12px;
-        padding-right: 17px;
-    }
-}
-
-.welcomeBreak {
+.nftsHero {
     overflow: hidden;
     display: flex;
     align-items: center;
-    border-top: 3px solid #000;
     margin-top: -4px;
 
     img {
-        animation: barrels 10s linear infinite;
+        animation: animationNFT 10s linear infinite;
     }
 
 
-    @keyframes roadmap {
+    @keyframes animationNFT {
         0% {
             transform: translateX(-100%);
         }
@@ -79,369 +51,310 @@ body>iframe {
     }
 }
 
-
-
-.bannerNFTS {
-
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    border-top: 3px solid #000;
-    margin-top: -4px;
-
-    img {
-        animation: bannerNFTS 10s linear infinite;
-    }
-
-
-    @keyframes bannerNFTS {
-        0% {
-            transform: translateX(0%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
-}
-
-.ourVision {
-    margin-top: -6px;
-    padding-top: 75px;
-    padding-bottom: 26px;
-    background: #A4CFF6;
-
-    p {
-        font-family: 'futura passata', sans-serif;
-        font-size: 84px;
-    }
-}
-
-.socialMedias {
-    font-family: 'futura passata', sans-serif;
-    padding-top: 82px;
-    background: #A4CFF6;
-    position: relative;
-
-    .buttons {
-        display: flex;
-        gap: 8px;
-    }
-
-    .onda {
-        width: 100%;
-        margin-top: -137px;
-        position: relative;
-        top: 5px;
-    }
-
-
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: #FFFD09;
-        border: 3px solid #000000;
-        padding: 8px 16px;
-        text-decoration: none;
-        color: #000;
-        font-size: 62px;
-    }
-
-    img {
-        pointer-events: none;
-    }
-}
-
-.informations {
-    padding-bottom: 70px;
-    background: #0062E1;
-
-    .card {
-        display: flex;
-        margin-bottom: 62px;
-    }
-
-    .text,
-    img {
-        border: 3px solid #000;
-    }
-
-    img {
-        width: 50%;
-        object-fit: cover;
-    }
-
-    .text {
-        font-family: sans-serif;
-        background: #fff;
-        border-right: 0;
-        font-size: 31.18px;
-        display: flex;
-        align-items: center;
-        padding: 0 24px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 70px 60px;
-        width: 50%;
-
-        p {
-            font-size: 41px;
-        }
-
-        a {
-            font-family: 'Futura Passata';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 41px;
-            line-height: 95%;
-            /* or 39px */
-
-            text-align: justify;
-            letter-spacing: -0.05em;
-            text-transform: uppercase;
-
-            color: #000000;
-            border: 4px solid #000;
-            background: #FFFD09;
-            width: 174px;
-            height: 57px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-
-            margin-top: 30px;
-
-        }
-    }
-
-    .reverse {
-        flex-direction: row-reverse;
-
-        .text {
-            border: 3px solid #000;
-            border-left: 0;
-        }
-    }
-}
-
-
-.faq {
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    border-bottom: 2px solid #000;
     overflow-x: hidden;
-    border-top: 3px solid #000000;
-    display: flex;
+    background: #fff;
+}
 
-    img {
-        animation: faq 10s linear infinite;
-        margin-right: 10px;
-    }
+.marquee-text {
+    display: inline-block;
+    width: auto;
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+    animation: scroll 10s linear infinite;
+}
+
+.marquee-text:before {
+    content: "WELCOME TO THE SURF JUNKIE CLUB • WELCOME TO THE SURF JUNKIE CLUB •";
+}
+
+.marquee.theClub,
+.marquee.theNFT,
+.marquee.realArt,
+.marquee.value,
+.marquee.roadmap,
+.marquee.joinUsMarquee,
+.marquee.faq,
+.marquee.real {
+    border-top: 2px solid #000;
+}
+
+.marquee-text.theClub:before {
+    content: "THE CLUB • THE CLUB • THE CLUB • ";
+}
+
+.marquee-text.theNFT:before {
+    content: "THE NFT • THE NFT • THE NFT •";
+}
+
+.marquee-text.realArt:before {
+    content: "REAL ART • REAL ART • REAL ART • ";
+}
+
+.marquee-text.value:before {
+    content: "SCARCITY & VALUE • SCARCITY & VALUE • ";
+}
+
+.marquee-text.roadmap:before {
+    content: "ROADMAP • ROADMAP • ROADMAP • ";
+}
+
+.marquee-text.joinUsMarquee:before {
+    content: "JOIN US • JOIN US • JOIN US • ";
+}
+
+.marquee-text.faq:before {
+    content: "FAQ • FAQ • FAQ • FAQ • FAQ • ";
+}
+
+.marquee-text.real:before {
+    content: "BARRELS ARE THE REAL DOPE • BARRELS ARE THE REAL DOPE •";
+}
+
+.marquee.real {
+    border-top: 0;
+}
+
+.marquee-text.mintDay {
+    font-size: 16px;
+    border-left: 2px solid #000;
+    padding-left: 12px;
+    line-height: 23px;
+}
+
+.marquee.mintDay {
+    background-color: #00F89E;
+}
+
+.marquee-text.mintDay:before {
+    content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY ";
+}
 
 
-    @keyframes faq {
-        0% {
-            transform: translateX(-100%);
-        }
 
-        100% {
-            transform: translateX(0%);
-        }
+
+@keyframes scroll {
+    100% {
+        transform: translateX(-100%);
     }
 }
+
 
 .joinUs {
-    overflow-x: hidden;
-    border-bottom: 3px solid #000000;
-    display: flex;
+    background: #A4CFF6;
+    padding-top: 44px;
+    padding-bottom: 38px;
 
-    img {
-        animation: joinUs 10s linear infinite;
-        margin-right: 10px;
-    }
-
-
-    @keyframes joinUs {
-        0% {
-            transform: translateX(0%);
-        }
-
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-}
-
-.internationalSuf {
-    overflow-x: hidden;
-    border-bottom: 3px solid #000000;
-    display: flex;
-    background: #00F89E;
-
-    img {
-        animation: faq 15s linear infinite;
-        margin-right: 10px;
-        margin-top: -34px;
-    }
-
-
-    @keyframes faq {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
-}
-
-.textDobra {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 41px;
-    line-height: 110%;
-    color: #000000;
-    padding-top: 82px;
-    padding-bottom: 72px;
-    background: #B5FF6B;
-    border-top: 3px solid #000000;
-}
-
-
-
-.infoPorcentagens {
-    font-family: 'futura passata',
-        sans-serif;
-    display: flex;
-    flex-direction: row;
-    padding-top: 110px;
-    padding-bottom: 140px;
-    background: #EF3443;
-    border-top: 4px solid #000000;
-
-    .containerCards {
-        display: flex;
-        gap: 130px;
-        justify-content: center;
-        position: relative;
-
-        &::after {
-            position: absolute;
-            content: url("../../img/lp/line-grafico.svg");
-            top: 46px;
-        }
-    }
-
-    .infoPorcentagens__esquerda {
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        position: relative;
-    }
-
-
-    .infoPorcentagens__direita {
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 521px;
-
-        .infoPorcentagens__porcentagem {
-            margin-left: 0;
-        }
-    }
-
-    .infoPorcentagens__esquerda .infoPorcentagens__card:nth-child(1) {
-        width: 433px;
-    }
-
-    .infoPorcentagens__esquerda .infoPorcentagens__card:nth-child(2) {
-        width: 552px;
-        margin-top: 156px;
-        margin-bottom: 215px;
-    }
-
-
-    .infoPorcentagens__esquerda .infoPorcentagens__card:nth-child(3) {
-        width: 599px;
-    }
-
-
-    .infoPorcentagens__direita .infoPorcentagens__card:nth-child(1) {
-        width: 583px;
-    }
-
-    .infoPorcentagens__direita .infoPorcentagens__card:nth-child(2) {
-        width: 552px;
-        margin-top: 198px;
-        margin-bottom: 215px;
-    }
-
-
-    .infoPorcentagens__direita .infoPorcentagens__card:nth-child(3) {
-        width: 436px;
-    }
-
-
-
-    .infoPorcentagens__porcentagem {
-        width: 208px;
-        background: #FFFD09;
-        border: 4px solid #000000;
-        font-weight: 700;
-        font-size: 79px;
-        line-height: 100px;
-        text-align: center;
-        width: fit-content;
-        border-bottom: 0;
-        padding: 0 46px;
-        margin-left: auto;
-    }
-
-    .infoPorcentagens__title {
-        font-weight: 700;
-        font-size: 84px;
-        line-height: 79px;
-        color: #000000;
-        background: #00B9FF;
-        border: 4px solid #000000;
-        padding-left: 15px;
-        padding-top: 28px;
-        padding-bottom: 28px;
-        padding-right: 15px;
-
-    }
-
-    .infoPorcentagens__text {
+    p {
         font-style: normal;
-        font-weight: 400;
-        font-size: 41px;
-        line-height: 110%;
-        /* or 45px */
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 94%;
+        color: #000000;
+    }
+
+
+}
+
+.btn-join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+    font-size: 22px;
+    background: #FFFD09;
+    border: 2px solid #000000;
+    color: #000;
+    text-decoration: none;
+    max-width: 127px;
+}
+
+.cardsNFT {
+    padding-top: 49px;
+    padding-bottom: 46px;
+    background-color: #0062E1;
+
+    .item {
+        margin: 46px auto;
+        max-width: 387px;
+    }
+
+
+
+    .item1 .containerImg {
+        height: 135px;
+        border: 2px solid #000000;
+    }
+
+    .item2.containerImg {
+        height: 212px;
+    }
+
+    .item3.containerImg {
+        height: 247px;
+    }
+
+    .containerImg {
+        width: 100%;
+        height: 180px;
+        background: #FF413E;
+        border-bottom: 0;
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .textInner {
+        border: 2px solid #000000;
+
+        background: #fff;
+        padding: 21px 21px 21px 24px;
+    }
+}
+
+.greenText {
+    padding: 30px 46px 34px 48px;
+    background: #B5FF6B;
+    border: 2px solid #000000;
+
+    p {
         font-family: sans-serif;
 
+        font-weight: 400;
+        font-size: 16.18px;
+        line-height: 110%;
         color: #000000;
-        background: #B5FF6B;
-        border: 4px solid #000000;
-        border-top: 0;
-        padding-left: 36px;
-        padding-right: 28px;
-        padding-top: 33px;
-        padding-bottom: 39px;
+
     }
 }
 
+.porcentagensNFT {
+    padding-top: 45px;
+    padding-bottom: 53px;
+    background: #FF413E;
+    position: relative;
+
+    &::after {
+        content: "";
+        background: transparent;
+        height: 3550px;
+        width: 3px;
+        position: absolute;
+        left: 5px;
+        top: 65px;
+        border-right: 3px dashed #000000;
+    }
+
+    .card {
+        max-width: 302.57px;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+
+    .porcentagemNumber {
+        width: fit-content;
+        height: 53px;
+        left: 80px;
+        top: 3579px;
+
+        background: #FFFD09;
+        border: 2px solid #000000;
+        padding: 8px 30px;
+        font-size: 45px;
+        display: inline-table;
+        border-bottom: 0px;
+
+    }
+
+    h2 {
+        font-size: 45px;
+        padding: 30px;
+        padding-right: 73px;
+        background: #00B9FF;
+        border: 2px solid #000000;
+        word-wrap: break-word;
+
+    }
+
+    .containerImage {
+        width: 100%;
+
+        img {
+            border: 2px solid #000000;
+            border-top: 0;
+            width: 100%;
+            object-fit: none;
+        }
+    }
+
+    p {
+        border: 2px solid #000000;
+        border-top: 0;
+
+        font-family: sans-serif;
+        padding: 40px;
+        font-size: 16.18px;
+        background: #B5FF6B;
+        margin-top: -4px;
+    }
+}
+
+.form {
+    padding-top: 37px;
+    padding-bottom: 49px;
+
+    p {
+        font-size: 16px;
+        color: #000000;
+        font-family: sans-serif;
+    }
+
+    input {
+        padding-left: 16px;
+        border: 2px solid #000000;
+        width: 100%;
+        height: 48px;
+        font-size: 19px;
+        color: #808080;
+
+        &::placeholder {
+            text-transform: uppercase;
+            color: #808080;
+        }
+    }
+
+    input:nth-child(2) {
+        margin-top: 30px;
+        border-bottom: 0;
+    }
+
+    input:nth-child(4) {
+        border-top: 0;
+        margin-bottom: 32px;
+    }
 
 
+    .btn-join {
+        max-width: fit-content;
+        padding-left: 9px;
+        padding-right: 5px;
+        margin-top: 0;
+    }
+
+    .p {
+        margin: 16px 0;
+    }
+}
 
 
 .accordion {
+    background: red;
     width: 100%;
     font-family: 'futura passata',
         sans-serif;
@@ -475,7 +388,7 @@ body>iframe {
     }
 
     .accordion-item-header {
-        padding: .5rem 3rem .5rem 1rem;
+        padding: .5rem 0rem .5rem 1rem;
         min-height: 3.5rem;
         font-weight: bold;
         display: flex;
@@ -494,7 +407,7 @@ body>iframe {
 
         span {
             margin-right: 18px;
-            font-size: 20px;
+            font-size: 10px;
             margin-top: -5px;
         }
     }
@@ -611,397 +524,7 @@ body>iframe {
     }
 }
 
-.mintDay {
-    margin-top: -36px;
-
-    .mintDayImg,
-    .mintDayImg2 {
-        height: 76px;
-        background-image: url("../../img/lp/mintDay.png");
-        animation: 15s mintDay linear infinite;
-
-    }
-
-    .mintDayImg2 {
-        animation: 15s mintDay2 linear infinite;
-        margin-top: -28px;
-    }
-
-    @keyframes mintDay {
-        0% {
-            background-position-x: 100%;
-        }
-
-        100% {
-            background-position-x: 0%;
-        }
-    }
-
-    @keyframes mintDay2 {
-        0% {
-            background-position-x: 0%;
-        }
-
-        100% {
-            background-position-x: 100%;
-        }
-    }
-}
-
-.NFTSContainer {
-    margin-top: 32px;
-    display: flex;
-    overflow-x: hidden;
-
-    img {
-        margin-left: -3px;
-        animation: animationBackground 10s linear infinite;
-    }
-
-
-    @keyframes NFTSContainer {
-        0% {
-            transform: translateX(0%);
-        }
-
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-}
-
-.barrels {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-
-    img {
-        margin-left: -3px;
-        animation: barrels 10s linear infinite;
-    }
-
-
-    @keyframes barrels {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
-}
-
-
-.roadmap {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    border-top: 3px solid #000;
-    padding: 10px 0;
-
-    img {
-        animation: barrels 10s linear infinite;
-    }
-
-
-    @keyframes roadmap {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    padding: 64px 0;
-    background: #FF39BB;
-
-    input {
-        border: 3px solid #000;
-        padding-left: 34px;
-        font-weight: 700;
-        font-size: 43px;
-        width: 100%;
-        color: #000000;
-        line-height: 100px;
-
-        &::placeholder {
-            color: rgba(0, 0, 0, .5);
-            text-transform: uppercase;
-        }
-    }
-
-    input:nth-child(2) {
-        border-top: 0;
-        border-bottom: 0;
-    }
-
-    p {
-        font-family: sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 41px;
-        line-height: 110%;
-        /* or 45px */
-        color: #000000;
-        margin-bottom: 40px;
-    }
-
-    .formButton {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 43px;
-        line-height: 100px;
-
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #000000;
-        background: #FFFD09;
-        border: 3px solid #000000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 41px;
-
-        &.whatsapp {
-            padding-right: 126px;
-            padding: 0 42px;
-            margin-bottom: 51px;
-        }
-
-        &.discord {
-            padding: 0 42px;
-        }
-    }
-}
-
-footer {
-    border-top: 3px solid #000000;
-    border-bottom: 3px solid #000000;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    p {
-        font-family: 'Futura Passata';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 100px;
-        /* identical to box height, or 278% */
-
-        letter-spacing: -0.05em;
-        text-transform: uppercase;
-
-        color: #000000;
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-// Mobile
-
 @media(max-width:767px) {
-    .container {
-        width: 100%;
-        padding: 0 24px;
-    }
-
-    .title {
-        margin-bottom: 21px;
-        position: relative;
-
-        p {
-            font-size: 21px;
-        }
-    }
-
-    .ourVision {
-        p {
-            font-size: 21px;
-        }
-    }
-
-    .welcomeBreak {
-        border-top: 1px solid #000;
-
-        img {
-            width: 500px;
-            padding-top: 3px;
-        }
-    }
-
-    .dobra3 {
-        margin-top: 0;
-
-        img {
-            height: 116.52px;
-        }
-    }
-
-
-
-    .socialMedias {
-        padding-top: 0;
-
-        a {
-            font-size: 14px;
-        }
-
-        .onda {
-            margin-top: -50px;
-        }
-    }
-
-    .informations {
-        padding-bottom: 28px;
-
-        .card {
-            flex-direction: column-reverse;
-        }
-
-        .card:last-child {
-            background-color: red;
-            margin-bottom: 0;
-        }
-
-        img {
-            width: 100%;
-            border: 1px solid #000;
-        }
-
-
-        .text {
-            padding: 24px;
-            width: 100%;
-            border: 1px solid #000;
-
-
-            p {
-                font-size: 16.18px;
-            }
-
-            a {
-                font-size: 16px;
-                width: 77.97px;
-                height: 28.26px;
-
-                background: #FFFD09;
-                border: 1px solid #000000;
-            }
-        }
-    }
-
-    .informations .reverse .text {
-        border: 1px solid #000;
-    }
-
-    .roadmap {
-        img {
-            height: 26px;
-        }
-    }
-
-    .textDobra {
-        padding: 40px 0;
-        font-weight: 400;
-        font-size: 16px;
-    }
-
-    .infoPorcentagens {
-        padding: 40px 0;
-
-        .containerCards {
-            gap: 0;
-
-            &::after {
-                content: url("../../img/lp/lateralCards.svg");
-                left: 54px;
-            }
-        }
-
-        .containerCards {
-            flex-direction: column;
-        }
-
-
-        .infoPorcentagens__card,
-        .infoPorcentagens__porcentagem,
-        .infoPorcentagens__esquerda .infoPorcentagens__card:nth-child(1),
-        .infoPorcentagens__esquerda .infoPorcentagens__card:nth-child(2),
-        .infoPorcentagens__esquerda .infoPorcentagens__card:nth-child(3),
-        .infoPorcentagens__direita .infoPorcentagens__card:nth-child(1),
-        .infoPorcentagens__direita .infoPorcentagens__card:nth-child(2),
-        .infoPorcentagens__direita .infoPorcentagens__card:nth-child(3) {
-            width: 100%;
-            margin: 0;
-        }
-
-        .infoPorcentagens__text {
-            font-size: 14px;
-            border: 1px solid #000000;
-            padding: 10px 8px;
-
-        }
-
-        .infoPorcentagens__title {
-            font-size: 18px;
-            border: 1px solid #000000;
-            line-height: 29px;
-            padding: 0 8px;
-        }
-
-        .infoPorcentagens__porcentagem {
-            font-size: 18px;
-            line-height: 22px;
-            border: 1px solid #000000;
-            border-bottom: 0;
-            width: fit-content;
-            padding: 0 12px;
-        }
-
-        .infoPorcentagens__esquerda,
-        .infoPorcentagens__direita {
-            align-items: center;
-            width: 100%;
-        }
-
-        .infoPorcentagens__direita {
-            margin-top: 0px;
-        }
-
-        .infoPorcentagens__card {
-            width: 167px !important;
-            margin-bottom: 45px !important;
-        }
-
-    }
-
-    .faq {
-        border-top: 1px solid #000000;
-
-        img {
-            height: 30px;
-        }
-    }
-
     .accordion {
         .container {
             padding: 0;
@@ -1012,7 +535,7 @@ footer {
         }
 
         .accordion-item-header {
-            font-size: 10px;
+            font-size: 18px;
             padding-left: 35px;
 
             span {
@@ -1041,7 +564,7 @@ footer {
         }
 
         .type1 .accordion-item-body-content {
-            padding-top: 10px;
+            padding-top: 18px;
             padding-bottom: 10px;
         }
     }
@@ -1074,68 +597,23 @@ footer {
         height: 54px;
         margin-top: -24px;
     }
+}
 
-    .barrels {
-        border: 1px solid #000000;
-        border-top: 0;
+.containerP {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        img {
-            height: 30px;
-        }
+    p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 38px;
+        /* identical to box height, or 200% */
+
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+
+        color: #000000;
+        margin: 0 16px;
     }
-
-    .mintDay {
-        img {
-            height: 116.52px;
-        }
-    }
-
-    .joinUs {
-        border: 0px solid #000000;
-
-        img {
-            height: 20px;
-        }
-    }
-
-    .form {
-        p {
-            font-size: 16px;
-        }
-
-        input {
-            font-size: 16px;
-            height: 32px;
-            padding-left: 16px;
-            border: 1px solid #000000;
-        }
-
-        .formButton.whatsapp,
-        .formButton.discord {
-            font-size: 16px;
-            padding: 0;
-            line-height: normal;
-            width: 100%;
-            padding: 10px 0;
-            border: 1px solid #000000;
-            margin: 16px 0;
-        }
-
-        .formButton.discord {
-            margin-top: -26px;
-        }
-
-    }
-
-    footer {
-        text-align: center;
-        padding: 16px 0;
-
-        p {
-            width: 100%;
-            font-size: 16px;
-            line-height: normal;
-        }
-    }
-
 }
