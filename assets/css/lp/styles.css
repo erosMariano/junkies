@@ -746,4 +746,17 @@ footer .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.error {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  background: #ff000091;
+  margin-top: -26px;
+  display: none;
+}
+
+.error.active {
+  display: block;
+}
 /*# sourceMappingURL=styles.css.map */
