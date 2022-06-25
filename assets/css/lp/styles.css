@@ -44,8 +44,8 @@ body > iframe {
 }
 
 .nftsHero img {
-  -webkit-animation: animationNFT 10s linear infinite;
-          animation: animationNFT 10s linear infinite;
+  -webkit-animation: animationNFT 20s linear infinite;
+          animation: animationNFT 20s linear infinite;
 }
 
 @-webkit-keyframes animationNFT {
@@ -99,7 +99,7 @@ body > iframe {
 }
 
 .marquee-text:before {
-  content: "WELCOME TO THE SURF JUNKIE CLUB • WELCOME TO THE SURF JUNKIE CLUB •";
+  content: "WELCOME TO THE SURF JUNKIE CLUB • ";
 }
 
 .marquee.theClub,
@@ -125,19 +125,40 @@ body > iframe {
 }
 
 .marquee-text.value:before {
-  content: "SCARCITY & VALUE • SCARCITY & VALUE • ";
+  content: "SCARCITY & VALUE • ";
 }
 
 .marquee-text.roadmap:before {
-  content: "ROADMAP • ROADMAP • ROADMAP • ";
+  content: "ROADMAP • ROADMAP • ";
 }
 
 .marquee-text.joinUsMarquee:before {
   content: "JOIN US • JOIN US • JOIN US • ";
 }
 
+.marquee.mint {
+  background: transparent;
+  height: 37px;
+  position: relative;
+  top: 3px;
+}
+
+.marquee-text.mint {
+  font-size: 16px;
+  height: auto;
+  letter-spacing: initial;
+}
+
+.marquee-text.mint:before {
+  content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY ";
+}
+
 .marquee-text.faq:before {
-  content: "FAQ • FAQ • FAQ • FAQ • FAQ • ";
+  content: " FAQ • FAQ • FAQ • FAQ • ";
+}
+
+.marquee-text.faq {
+  padding-left: 9px;
 }
 
 .marquee-text.real:before {
@@ -166,6 +187,11 @@ body > iframe {
 .marquee-text.theNFT {
   position: relative;
   top: 1px;
+}
+
+.marquee-text.junkieClub {
+  -webkit-animation: scroll 17s linear infinite !important;
+          animation: scroll 17s linear infinite !important;
 }
 
 .marquee-text.mintDay {
@@ -230,8 +256,7 @@ body > iframe {
   margin-top: 33px;
   font-size: 22px;
   background: #FFFD09;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border: 2px solid #000000;
   color: #000;
   text-decoration: none;
   max-width: 127px;
@@ -248,13 +273,25 @@ body > iframe {
   max-width: 387px;
 }
 
+.cardsNFT .item.mt-0 {
+  margin-top: 0;
+}
+
 .cardsNFT .item1 .containerImg {
-  height: 135px;
+  height: 143px;
   border: 2px solid #000000;
 }
 
+.cardsNFT .item1 .containerImg img {
+  width: 101%;
+  position: relative;
+  left: -2px;
+  top: -1px;
+  border: 1px solid #000;
+}
+
 .cardsNFT .item2.containerImg {
-  height: 212px;
+  height: 223px;
 }
 
 .cardsNFT .item3.containerImg {
@@ -304,19 +341,25 @@ body > iframe {
 }
 
 .porcentagensNFT::after {
-  content: url("../../img/lp/strokeLateral.svg");
+  content: "";
   background: transparent;
-  height: 3550px;
+  height: 3252px;
   width: 3px;
   position: absolute;
-  left: 5px;
+  left: 22px;
   top: 65px;
+  border-left: 3px dashed #000;
 }
 
 .porcentagensNFT .card {
   max-width: 302.57px;
   margin: 0 auto;
   margin-bottom: 48px;
+  margin-right: 30px;
+}
+
+.porcentagensNFT .card.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .porcentagensNFT .porcentagemNumber {
@@ -337,10 +380,15 @@ body > iframe {
 .porcentagensNFT h2 {
   font-size: 45px;
   padding: 30px;
-  padding-right: 73px;
+  padding-right: 50px;
   background: #00B9FF;
   border: 2px solid #000000;
   word-wrap: break-word;
+  line-height: 42px;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .porcentagensNFT .containerImage {
@@ -368,7 +416,7 @@ body > iframe {
 .form {
   padding-top: 37px;
   padding-bottom: 49px;
-  background-color: #00B9FF;
+  background-color: #93E7FF;
 }
 
 .form p {
@@ -503,100 +551,67 @@ body > iframe {
   font-family: sans-serif;
 }
 
-.accordion .accordion-item-body.type1 {
-  font-weight: 400;
-  font-size: 41px;
-  font-family: sans-serif;
-}
-
-.accordion .accordion-item-body.type2 .accordion-item-body-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 41px;
-  padding-right: 0;
-}
-
-.accordion .accordion-item-body.type2 .card {
-  border: 3px solid #000000;
-  width: 544.47px;
-}
-
-.accordion .accordion-item-body.type2 .card .titleCard {
-  padding-left: 65px;
-  background: #FF6600;
-  border-bottom: 3px solid #000000;
-}
-
-.accordion .accordion-item-body.type2 .card img {
-  width: 100%;
-  height: 460.11px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.accordion .accordion-item-body.type2 .card p {
-  background: #fff;
-  padding-top: 58px;
-  padding-left: 65px;
-  padding-right: 25px;
-  margin-top: -12px;
-  padding-bottom: 56px;
-  border-top: 3px solid #000000;
-}
-
-.accordion .accordion-item-body.type3.active {
-  overflow: visible;
-}
-
-.accordion .accordion-item-body.type3 .accordion-item-body-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: sans-serif;
-}
-
-.accordion .accordion-item-body.type3 img {
-  -webkit-animation: animationBackground 10s linear infinite;
-          animation: animationBackground 10s linear infinite;
-}
-
-.accordion .accordion-item-body.type3 p {
-  font-family: sans-serif;
-  padding-left: 57px;
-  padding-right: 34px;
-  margin-top: 25px;
-  margin-bottom: 46px;
-}
-
-@-webkit-keyframes animationBackground {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes animationBackground {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
 .accordion .accordion-item-body-content {
-  padding: 1rem;
-  padding-left: 55px;
+  font-size: 16px;
+  margin: 0;
+  padding: 24px;
+  padding-top: 0;
+  padding-left: 37px;
+  padding-right: 55px;
+  padding-bottom: 0;
   font-family: sans-serif;
+  padding-bottom: 23px;
+}
+
+.accordion img.gif {
+  width: 100%;
+  padding-left: 37px;
+  padding-right: 55px;
+}
+
+.accordion .felipe {
+  margin: 0 auto;
+  max-width: 345px;
+  margin: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.containerGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.containerGif img {
+  -webkit-animation: teste 10s linear infinite;
+          animation: teste 10s linear infinite;
+  height: 74px;
+}
+
+@-webkit-keyframes teste {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes teste {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 .accordioGreen .accordion-item {
@@ -639,10 +654,6 @@ body > iframe {
     font-size: 16px;
     padding-left: 34px;
     font-family: sans-serif;
-  }
-  .accordion .type1 .accordion-item-body-content {
-    padding-top: 18px;
-    padding-bottom: 10px;
   }
   .accordion .accordion-item-body.type2 .card p {
     padding: 24px;
@@ -698,5 +709,41 @@ body > iframe {
   border-bottom: 2px solid #000;
   font-size: 16px;
   line-height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mintDay p {
+  border: 2px solid #000;
+  border-bottom: 0;
+  border-top: 0;
+  line-height: 37px;
+}
+
+.mintDay .boxRotativo {
+  overflow: hidden;
+  width: 100%;
+}
+
+.mintDay .boxRotativo p {
+  width: 376px;
+}
+
+.mintDay .box {
+  overflow: hidden;
+}
+
+.mintDay .box p {
+  width: 420px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */
