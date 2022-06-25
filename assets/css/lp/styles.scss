@@ -68,6 +68,8 @@ body>iframe {
     height: 56px;
     display: flex;
     align-items: center;
+    overflow-y: hidden;
+
 }
 
 .marquee-text {
@@ -80,6 +82,11 @@ body>iframe {
     position: relative;
     top: -1px;
     letter-spacing: -2px;
+}
+
+.marquee.direita .marquee-text {
+    animation: scroll2 10s linear infinite;
+
 }
 
 .marquee-text:before {
@@ -131,6 +138,7 @@ body>iframe {
     font-size: 16px;
     height: auto;
     letter-spacing: initial;
+    padding-left: 10px;
 }
 
 .marquee-text.mint:before {
@@ -153,6 +161,9 @@ body>iframe {
     border-top: 0;
 }
 
+.marquee-text.junkieClub {
+    padding-left: 7px;
+}
 
 .marquee-text.junkieClub,
 .marquee-text.realArt {
@@ -162,7 +173,7 @@ body>iframe {
 
 .marquee-text.realArt {
     position: relative;
-    top: 1px;
+    top: 0.5px;
 }
 
 .marquee.theNFT {
@@ -205,6 +216,13 @@ body>iframe {
         transform: translateX(-100%);
     }
 }
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-100%);
+    }100%{
+
+    }
+}
 
 
 .joinUs {
@@ -215,7 +233,7 @@ body>iframe {
     p {
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
+        font-size: 31px;
         line-height: 94%;
         color: #000000;
         text-align: justify;
@@ -254,17 +272,26 @@ body>iframe {
     }
 
 
+    .containerImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .item1 .containerImg {
         height: 135px;
-        border: 2px solid #000000;
+        border: 0px solid #000000;
 
         img {
-            width: 101%;
+            width: 100%;
             position: relative;
-            left: -2px;
-            top: -1px;
-            border: 1px solid #000;
+            left: 0px;
+            top: -2px;
+            border: 2px solid #000;
+        }
+
+        .textInner {
+            border-top: 0 !important;
         }
     }
 
@@ -326,7 +353,7 @@ body>iframe {
     &::after {
         content: "";
         background: transparent;
-        height: 3252px;
+        height: 2792px;
         width: 3px;
         position: absolute;
         left: 22px;
@@ -354,7 +381,7 @@ body>iframe {
 
         background: #FFFD09;
         border: 2px solid #000000;
-        padding: 8px 30px;
+        padding: 0px 30px;
         font-size: 45px;
         display: inline-table;
         border-bottom: 0px;
@@ -363,7 +390,7 @@ body>iframe {
 
     h2 {
         font-size: 45px;
-        padding: 30px;
+        padding: 12px 30px;
         padding-right: 50px;
         background: #00B9FF;
         border: 2px solid #000000;
@@ -390,7 +417,7 @@ body>iframe {
         border-top: 0;
 
         font-family: sans-serif;
-        padding: 40px;
+        padding: 17px 30px;
         font-size: 16.18px;
         background: #B5FF6B;
         margin-top: -4px;
@@ -541,13 +568,15 @@ body>iframe {
         font-family: sans-serif;
         padding-bottom: 23px;
 
+        a {
+            color: #000;
+        }
 
     }
 
     img.gif {
         width: 100%;
-        padding-left: 37px;
-        padding-right: 55px;
+        border: 2px solid #000;
     }
 
     .felipe {
@@ -557,6 +586,8 @@ body>iframe {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        margin-top: 20px;
+        margin-bottom: -19px;
     }
 }
 
@@ -591,6 +622,11 @@ body>iframe {
 }
 
 @media(max-width:767px) {
+    .final {
+        margin-top: -6px;
+
+    }
+
     .accordion {
         .container {
             padding: 0;
@@ -598,12 +634,15 @@ body>iframe {
 
         .accordion-item {
             border: 1px solid #000000;
+            border-right: 0;
+            border-left: 0;
         }
 
         .accordion-item-header {
             font-size: 18px;
-            padding-left: 35px;
-            padding-right: 40px;
+            padding-left: 44px;
+            padding-right: 70px;
+            line-height: 19px;
 
             span {
                 font-size: 10px;
@@ -611,7 +650,8 @@ body>iframe {
                 margin-right: 0;
                 position: absolute;
                 left: 10px;
-                top: 19px;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
 
@@ -627,7 +667,7 @@ body>iframe {
 
         .accordion-item-body-content {
             font-size: 16px;
-            padding-left: 34px;
+            padding-left: 44px;
             font-family: sans-serif;
 
 
@@ -704,6 +744,9 @@ body>iframe {
     .boxRotativo {
         overflow: hidden;
         width: 100%;
+        /* line-height: 88px; */
+        border-left: 2px solid #000;
+        margin-bottom: -2px;
 
         p {
             width: 376px;
@@ -724,6 +767,8 @@ footer {
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: 34px;
     }
 }
 
@@ -736,6 +781,8 @@ footer {
 
     display: none;
 }
-.error.active{
+
+.error.active {
     display: block;
+    margin-bottom: 20px;
 }

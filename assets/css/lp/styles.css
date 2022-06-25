@@ -83,6 +83,7 @@ body > iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
 }
 
 .marquee-text {
@@ -96,6 +97,11 @@ body > iframe {
   position: relative;
   top: -1px;
   letter-spacing: -2px;
+}
+
+.marquee.direita .marquee-text {
+  -webkit-animation: scroll2 10s linear infinite;
+          animation: scroll2 10s linear infinite;
 }
 
 .marquee-text:before {
@@ -147,6 +153,7 @@ body > iframe {
   font-size: 16px;
   height: auto;
   letter-spacing: initial;
+  padding-left: 10px;
 }
 
 .marquee-text.mint:before {
@@ -169,6 +176,10 @@ body > iframe {
   border-top: 0;
 }
 
+.marquee-text.junkieClub {
+  padding-left: 7px;
+}
+
 .marquee-text.junkieClub,
 .marquee-text.realArt {
   position: relative;
@@ -177,7 +188,7 @@ body > iframe {
 
 .marquee-text.realArt {
   position: relative;
-  top: 1px;
+  top: 0.5px;
 }
 
 .marquee.theNFT {
@@ -227,6 +238,24 @@ body > iframe {
   }
 }
 
+@-webkit-keyframes scroll2 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+  }
+}
+
 .joinUs {
   background: #A4CFF6;
   padding-top: 44px;
@@ -236,7 +265,7 @@ body > iframe {
 .joinUs p {
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 31px;
   line-height: 94%;
   color: #000000;
   text-align: justify;
@@ -277,17 +306,33 @@ body > iframe {
   margin-top: 0;
 }
 
+.cardsNFT .containerImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .cardsNFT .item1 .containerImg {
   height: 135px;
-  border: 2px solid #000000;
+  border: 0px solid #000000;
 }
 
 .cardsNFT .item1 .containerImg img {
-  width: 101%;
+  width: 100%;
   position: relative;
-  left: -2px;
-  top: -1px;
-  border: 1px solid #000;
+  left: 0px;
+  top: -2px;
+  border: 2px solid #000;
+}
+
+.cardsNFT .item1 .containerImg .textInner {
+  border-top: 0 !important;
 }
 
 .cardsNFT .item2.containerImg {
@@ -343,7 +388,7 @@ body > iframe {
 .porcentagensNFT::after {
   content: "";
   background: transparent;
-  height: 3252px;
+  height: 2792px;
   width: 3px;
   position: absolute;
   left: 22px;
@@ -371,7 +416,7 @@ body > iframe {
   top: 3579px;
   background: #FFFD09;
   border: 2px solid #000000;
-  padding: 8px 30px;
+  padding: 0px 30px;
   font-size: 45px;
   display: inline-table;
   border-bottom: 0px;
@@ -379,7 +424,7 @@ body > iframe {
 
 .porcentagensNFT h2 {
   font-size: 45px;
-  padding: 30px;
+  padding: 12px 30px;
   padding-right: 50px;
   background: #00B9FF;
   border: 2px solid #000000;
@@ -407,7 +452,7 @@ body > iframe {
   border: 2px solid #000000;
   border-top: 0;
   font-family: sans-serif;
-  padding: 40px;
+  padding: 17px 30px;
   font-size: 16.18px;
   background: #B5FF6B;
   margin-top: -4px;
@@ -563,10 +608,13 @@ body > iframe {
   padding-bottom: 23px;
 }
 
+.accordion .accordion-item-body-content a {
+  color: #000;
+}
+
 .accordion img.gif {
   width: 100%;
-  padding-left: 37px;
-  padding-right: 55px;
+  border: 2px solid #000;
 }
 
 .accordion .felipe {
@@ -577,6 +625,8 @@ body > iframe {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  margin-top: 20px;
+  margin-bottom: -19px;
 }
 
 .containerGif {
@@ -623,16 +673,22 @@ body > iframe {
 }
 
 @media (max-width: 767px) {
+  .final {
+    margin-top: -6px;
+  }
   .accordion .container {
     padding: 0;
   }
   .accordion .accordion-item {
     border: 1px solid #000000;
+    border-right: 0;
+    border-left: 0;
   }
   .accordion .accordion-item-header {
     font-size: 18px;
-    padding-left: 35px;
-    padding-right: 40px;
+    padding-left: 44px;
+    padding-right: 70px;
+    line-height: 19px;
   }
   .accordion .accordion-item-header span {
     font-size: 10px;
@@ -640,7 +696,9 @@ body > iframe {
     margin-right: 0;
     position: absolute;
     left: 10px;
-    top: 19px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .accordion .accordion-item-header::after {
     content: url("../../img/lp/plusMobile.png");
@@ -652,7 +710,7 @@ body > iframe {
   }
   .accordion .accordion-item-body-content {
     font-size: 16px;
-    padding-left: 34px;
+    padding-left: 44px;
     font-family: sans-serif;
   }
   .accordion .accordion-item-body.type2 .card p {
@@ -724,6 +782,9 @@ body > iframe {
 .mintDay .boxRotativo {
   overflow: hidden;
   width: 100%;
+  /* line-height: 88px; */
+  border-left: 2px solid #000;
+  margin-bottom: -2px;
 }
 
 .mintDay .boxRotativo p {
@@ -745,6 +806,10 @@ footer .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 34px;
 }
 
 .error {
@@ -758,5 +823,6 @@ footer .container {
 
 .error.active {
   display: block;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
