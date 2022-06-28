@@ -10,6 +10,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'futura passata', sans-serif;
+  letter-spacing: -0.03em;
 }
 
 .hero img {
@@ -142,6 +143,10 @@ body > iframe {
   content: "JOIN US • JOIN US • JOIN US • ";
 }
 
+.marquee-text {
+  padding-left: 10px;
+}
+
 .marquee.mint {
   background: transparent;
   height: 37px;
@@ -272,6 +277,10 @@ body > iframe {
   letter-spacing: -2px;
 }
 
+.accordion-item-body + div {
+  background: red;
+}
+
 .btn-join {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +299,69 @@ body > iframe {
   text-decoration: none;
   max-width: 127px;
   height: 38px;
+}
+
+.cardsNFT .textInner p,
+.porcentagensNFT p,
+.form p,
+.accordion p.accordion-item-body-content {
+  letter-spacing: normal !important;
+}
+
+.accordion-item.active {
+  background: #00B9FF !important;
+}
+
+.nftCard {
+  width: 354px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.nftCard h2 {
+  background: #FF6600;
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  /* or 263% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0px;
+  border: 2px solid #000000;
+  border-bottom: 0;
+}
+
+.nftCard p {
+  font-family: 'Microsoft Sans Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.18px;
+  line-height: 110%;
+  color: #000000;
+  background: #fff;
+  padding-top: 35px;
+  padding-left: 42px;
+  padding-right: 34px;
+  padding-bottom: 26px;
+  margin-top: -11px;
+  border: 2px solid #000;
+  border-top: 0;
+}
+
+.nftCard img {
+  width: 100%;
 }
 
 .cardsNFT {
@@ -357,7 +429,7 @@ body > iframe {
 .cardsNFT .textInner {
   border: 2px solid #000000;
   background: #fff;
-  padding: 21px 21px 21px 24px;
+  padding: 21px 21px 18px 24px;
 }
 
 .cardsNFT .textInner p {
@@ -368,6 +440,8 @@ body > iframe {
   padding: 30px 46px 34px 48px;
   background: #B5FF6B;
   border: 2px solid #000000;
+  border-right: 0;
+  border-left: 0;
 }
 
 .greenText p {
@@ -385,22 +459,10 @@ body > iframe {
   position: relative;
 }
 
-.porcentagensNFT::after {
-  content: "";
-  background: transparent;
-  height: 2792px;
-  width: 3px;
-  position: absolute;
-  left: 22px;
-  top: 65px;
-  border-left: 3px dashed #000;
-}
-
 .porcentagensNFT .card {
   max-width: 302.57px;
   margin: 0 auto;
   margin-bottom: 48px;
-  margin-right: 30px;
 }
 
 .porcentagensNFT .card.mb-0 {
@@ -434,6 +496,7 @@ body > iframe {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  letter-spacing: -0.03em;
 }
 
 .porcentagensNFT .containerImage {
@@ -477,6 +540,7 @@ body > iframe {
   height: 48px;
   font-size: 19px;
   color: #808080;
+  border-radius: 0px;
 }
 
 .form input::-webkit-input-placeholder {
@@ -531,10 +595,6 @@ body > iframe {
 
 .accordion.accordionRosa .accordion-item:hover {
   background-color: #FF39BB;
-}
-
-.accordion.accordionBlue .accordion-item:hover {
-  background-color: #00B9FF;
 }
 
 .accordion .accordion-item {
@@ -606,6 +666,10 @@ body > iframe {
   padding-bottom: 0;
   font-family: sans-serif;
   padding-bottom: 23px;
+}
+
+.accordion .accordion-item-body-content.active {
+  background: #53B6F9;
 }
 
 .accordion .accordion-item-body-content a {
@@ -799,6 +863,18 @@ body > iframe {
   width: 420px;
 }
 
+.mintDay .porcentagensNFT .porcentagemNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,5 +900,14 @@ footer .container {
 .error.active {
   display: block;
   margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+  .item1 .textInner {
+    margin-top: -4px;
+  }
+  .item3 .textInner {
+    margin-top: -2px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

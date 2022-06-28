@@ -23,6 +23,16 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 })
 
 
+const accordionItem = document.querySelectorAll(".accordion-item")
+accordionItem.forEach((el) => {
+    el.addEventListener("click", () => {
+        accordionItem.forEach((accordion) =>{
+            accordion.classList.remove("active")
+        })
+        el.classList.add("active")
+    })
+})
+
 
 const [nome, email, phone] = document.querySelectorAll(".form input")
 const submit = document.querySelector(".form .enviar")

@@ -9,6 +9,8 @@
     box-sizing: border-box;
     font-family: 'futura passata',
         sans-serif;
+    letter-spacing: -0.03em;
+
 
 }
 
@@ -127,6 +129,10 @@ body>iframe {
     content: "JOIN US • JOIN US • JOIN US • ";
 }
 
+.marquee-text {
+    padding-left: 10px;
+}
+
 .marquee.mint {
     background: transparent;
     height: 37px;
@@ -216,12 +222,13 @@ body>iframe {
         transform: translateX(-100%);
     }
 }
+
 @keyframes scroll2 {
     0% {
         transform: translateX(-100%);
-    }100%{
-
     }
+
+    100% {}
 }
 
 
@@ -243,6 +250,10 @@ body>iframe {
 
 }
 
+.accordion-item-body+div {
+    background: red;
+}
+
 .btn-join {
     display: flex;
     align-items: center;
@@ -256,6 +267,65 @@ body>iframe {
     text-decoration: none;
     max-width: 127px;
     height: 38px;
+}
+
+.cardsNFT .textInner p,
+.porcentagensNFT p,
+.form p,
+.accordion p.accordion-item-body-content {
+    letter-spacing: normal !important;
+
+}
+.accordion-item.active{
+    background: #00B9FF !important;
+}
+.nftCard {
+    width: 354px;
+    margin: 0 auto;
+    margin-top: 24px;
+
+    h2 {
+        background: #FF6600;
+        font-family: 'Futura Passata';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        /* or 263% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 0px;
+        border: 2px solid #000000;
+        border-bottom: 0;
+    }
+
+    p {
+        font-family: 'Microsoft Sans Serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.18px;
+        line-height: 110%;
+        color: #000000;
+
+        background: #fff;
+        padding-top: 35px;
+        padding-left: 42px;
+        padding-right: 34px;
+        padding-bottom: 26px;
+        margin-top: -11px;
+        border: 2px solid #000;
+        border-top: 0;
+    }
+
+    img {
+        width: 100%;
+    }
 }
 
 .cardsNFT {
@@ -277,6 +347,8 @@ body>iframe {
         align-items: center;
         justify-content: center;
     }
+
+
 
     .item1 .containerImg {
         height: 135px;
@@ -319,7 +391,7 @@ body>iframe {
         border: 2px solid #000000;
 
         background: #fff;
-        padding: 21px 21px 21px 24px;
+        padding: 21px 21px 18px 24px;
 
         p {
             font-family: sans-serif;
@@ -332,6 +404,8 @@ body>iframe {
     padding: 30px 46px 34px 48px;
     background: #B5FF6B;
     border: 2px solid #000000;
+    border-right: 0;
+    border-left: 0;
 
     p {
         font-family: sans-serif;
@@ -350,22 +424,10 @@ body>iframe {
     background: #FF413E;
     position: relative;
 
-    &::after {
-        content: "";
-        background: transparent;
-        height: 2792px;
-        width: 3px;
-        position: absolute;
-        left: 22px;
-        top: 65px;
-        border-left: 3px dashed #000;
-    }
-
     .card {
         max-width: 302.57px;
         margin: 0 auto;
         margin-bottom: 48px;
-        margin-right: 30px;
 
         &.mb-0 {
             margin-bottom: 0 !important;
@@ -399,6 +461,8 @@ body>iframe {
 
         overflow-wrap: break-word;
         hyphens: auto;
+        letter-spacing: -0.03em;
+
     }
 
     .containerImage {
@@ -443,6 +507,7 @@ body>iframe {
         height: 48px;
         font-size: 19px;
         color: #808080;
+        border-radius: 0px;
 
         &::placeholder {
             text-transform: uppercase;
@@ -488,13 +553,13 @@ body>iframe {
         }
     }
 
-    &.accordionBlue {
-        .accordion-item {
-            &:hover {
-                background-color: #00B9FF;
-            }
-        }
-    }
+    // &.accordionBlue {
+    //     .accordion-item {
+    //         &:hover {
+    //             background-color: #00B9FF;
+    //         }
+    //     }
+    // }
 
     .accordion-item {
         background: #FBF801;
@@ -568,6 +633,10 @@ body>iframe {
         font-family: sans-serif;
         padding-bottom: 23px;
 
+        &.active {
+            background: #53B6F9;
+        }
+
         a {
             color: #000;
         }
@@ -622,6 +691,7 @@ body>iframe {
 }
 
 @media(max-width:767px) {
+
     .final {
         margin-top: -6px;
 
@@ -761,6 +831,11 @@ body>iframe {
         }
     }
 
+    .porcentagensNFT .porcentagemNumber {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 footer {
@@ -785,4 +860,14 @@ footer {
 .error.active {
     display: block;
     margin-bottom: 20px;
+}
+
+@media(max-width: 375px) {
+    .item1 .textInner {
+        margin-top: -4px;
+    }
+
+    .item3 .textInner {
+        margin-top: -2px;
+    }
 }
