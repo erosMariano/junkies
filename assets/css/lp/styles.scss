@@ -276,9 +276,11 @@ body>iframe {
     letter-spacing: normal !important;
 
 }
-.accordion-item.active{
+
+.accordion-item.active {
     background: #00B9FF !important;
 }
+
 .nftCard {
     width: 354px;
     margin: 0 auto;
@@ -351,7 +353,7 @@ body>iframe {
 
 
     .item1 .containerImg {
-        height: 135px;
+        height: auto;
         border: 0px solid #000000;
 
         img {
@@ -368,11 +370,15 @@ body>iframe {
     }
 
     .item2.containerImg {
-        height: 210px;
+        height: auto;
+
+
     }
 
+
+
     .item3.containerImg {
-        height: 247px;
+        height: auto;
     }
 
     .containerImg {
@@ -396,6 +402,24 @@ body>iframe {
         p {
             font-family: sans-serif;
 
+        }
+    }
+
+    .item2 {
+        .textInner {
+            border: 1px solid #000000;
+            background: #fff;
+            padding: 21px 21px 18px 24px;
+            border-top: 0;
+        }
+    }
+
+    .item3 {
+        .textInner {
+            border: 2px solid #000000;
+            background: #fff;
+            padding: 21px 21px 18px 24px;
+            border-top: 0;
         }
     }
 }

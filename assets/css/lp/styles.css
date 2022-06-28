@@ -391,7 +391,7 @@ body > iframe {
 }
 
 .cardsNFT .item1 .containerImg {
-  height: 135px;
+  height: auto;
   border: 0px solid #000000;
 }
 
@@ -408,11 +408,11 @@ body > iframe {
 }
 
 .cardsNFT .item2.containerImg {
-  height: 210px;
+  height: auto;
 }
 
 .cardsNFT .item3.containerImg {
-  height: 247px;
+  height: auto;
 }
 
 .cardsNFT .containerImg {
@@ -434,6 +434,20 @@ body > iframe {
 
 .cardsNFT .textInner p {
   font-family: sans-serif;
+}
+
+.cardsNFT .item2 .textInner {
+  border: 1px solid #000000;
+  background: #fff;
+  padding: 21px 21px 18px 24px;
+  border-top: 0;
+}
+
+.cardsNFT .item3 .textInner {
+  border: 2px solid #000000;
+  background: #fff;
+  padding: 21px 21px 18px 24px;
+  border-top: 0;
 }
 
 .greenText {
