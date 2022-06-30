@@ -662,7 +662,7 @@ table {
 .accordion .accordion-item-header {
   font-size: 18px;
   padding-left: 20px;
-  padding-right: 25px;
+  padding-right: 32px;
   line-height: 19px;
   letter-spacing: -0.03em;
 }
@@ -774,5 +774,9 @@ table {
 
 .nftCard img {
   width: 100%;
+}
+
+.accordion-item.active {
+  background: #00B9FF;
 }
 /*# sourceMappingURL=styles.css.map */
