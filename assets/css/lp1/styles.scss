@@ -241,6 +241,11 @@ table {
 	content: "FAQ • FAQ • FAQ • FAQ • FAQ • ";
 }
 
+.marquee-text.mint:before {
+	content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY ";
+}
+
+
 .marquee.faq {
 	border-top: 0;
 }
@@ -486,6 +491,40 @@ table {
 	}
 }
 
+.nftsHeroHome {
+	border: 2px solid #000000;
+	border-bottom: 0;
+	border-right: 0;
+	border-left: 0;
+	border-left: 0;
+	overflow-x: hidden;
+	margin-top: -3px;
+
+	.teste {
+		animation: animationNFT2 20s linear infinite;
+		display: flex;
+		width: 2100px;
+		height: 300px;
+	}
+
+	img {
+		transform: translateX(0);
+		animation: none !important;
+
+	}
+
+
+	@keyframes animationNFT2 {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-1800px);
+		}
+	}
+}
+
 
 
 
@@ -513,7 +552,7 @@ table {
 	}
 
 	.accordion-item:last-child {
-		border-bottom: 3px solid #000;
+		border-bottom: 0px solid #000;
 	}
 
 	.accordion-item-header {
@@ -591,7 +630,7 @@ table {
 		border: 2px solid #000;
 	}
 
-	video{
+	video {
 		width: 100%;
 	}
 
@@ -744,4 +783,83 @@ table {
 
 .accordion-item.active {
 	background: #00B9FF;
+}
+
+.nftsHero2 {
+	border-top: 0;
+}
+
+
+
+.mintDay {
+	text-align: center;
+	background: #00F89E;
+	border-bottom: 2px solid #000;
+	font-size: 16px;
+	line-height: 34px;
+
+	display: flex;
+
+	p {
+		border: 2px solid #000;
+		border-bottom: 0;
+		border-top: 0;
+		line-height: 37px;
+	}
+
+	.marquee {
+		background: #00F89E;
+	}
+
+	.boxRotativo {
+		overflow: hidden;
+		width: 100%;
+		/* line-height: 88px; */
+		border-left: 2px solid #000;
+		margin-bottom: -2px;
+		background: #00F89E;
+
+		p {
+			width: 376px;
+		}
+	}
+
+	.marquee-text {
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 34px;
+		/* identical to box height */
+
+		display: flex;
+		align-items: center;
+		text-align: justify;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+
+		color: #000000;
+	}
+
+	.box {
+		overflow: hidden;
+
+		p {
+			width: 420px;
+		}
+	}
+
+	.porcentagensNFT .porcentagemNumber {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.marquee.direita .marquee-text {
+	animation: scroll2 10s linear infinite;
+}
+
+@keyframes scroll2 {
+	0% {
+		transform: translateX(-100%);
+	}
 }
