@@ -1,0 +1,540 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'futura passata';
+  src: url("../../font/FuturaPassata-DISPLAY.otf");
+}
+
+.error {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  background: #ff000091;
+  margin-top: -26px;
+  display: none;
+}
+
+.btn-join {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFD09;
+  border: 2.45px solid #000000;
+  padding: 12.25px 24.5px;
+  font-weight: 700;
+  font-size: 26.95px;
+  line-height: 95%;
+  /* identical to box height, or 26px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'futura passata', sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  border-bottom: 2px solid #000;
+  overflow-x: hidden;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+  background: #FFFFFF;
+  border-width: 2px 0px;
+  border-style: solid;
+}
+
+.marquee-text {
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 95%;
+  /* identical to box height, or 43px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  -webkit-animation: scroll 10s linear infinite;
+          animation: scroll 10s linear infinite;
+  padding-left: 11px;
+}
+
+.marquee-text.junkieClub:before {
+  content: "WELCOME TO THE SURF JUNKIE CLUB • ";
+}
+
+.marquee-text.theNFTS:before {
+  content: "THE NFTS • THE NFTS • THE NFTS •";
+}
+
+.marquee-text.theClub:before {
+  content: "THE CLUB • THE CLUB • THE CLUB • ";
+}
+
+.marquee-text.realArt:before {
+  content: "REAL ART • REAL ART • REAL ART • ";
+}
+
+.marquee-text.value:before {
+  content: "SCARCITY & VALUE • SCARCITY & VALUE •";
+}
+
+.marquee-text.roadmap:before {
+  content: "ROADMAP • ROADMAP • ROADMAP • ";
+}
+
+.marquee-text.join:before {
+  content: "• JOIN US • JOIN US • JOIN";
+}
+
+.marquee-text.faq:before {
+  content: "FAQ • FAQ • FAQ • FAQ • FAQ • ";
+}
+
+.marquee.faq {
+  border-top: 0;
+}
+
+@-webkit-keyframes scroll {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.weAreCommunity {
+  padding: 66px 30px;
+  background: #A4CFF6;
+}
+
+.weAreCommunity p {
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 94%;
+  text-align: justify;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.weAreCommunity .btn-join {
+  margin-top: 30px;
+}
+
+.cardsNFT {
+  padding: 66px 30px;
+  background: #0062E1;
+}
+
+.cardsNFT .card {
+  width: 100%;
+}
+
+.cardsNFT .containerImage {
+  background: #FF413E;
+  border: 2px solid #000;
+}
+
+.cardsNFT .containerImage img {
+  width: 100%;
+}
+
+.cardsNFT .containerText {
+  padding: 25px 20px 25px 25px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-top: 0;
+}
+
+.cardsNFT p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.18px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.greenSection {
+  padding: 40px 30px;
+  border-bottom: 2px solid #000000;
+  font-family: sans-serif;
+  background: #B5FF6B;
+}
+
+.porcentagens {
+  padding: 66px 30px;
+  background: #FF413E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 66px;
+}
+
+.porcentagens .card {
+  width: 100%;
+}
+
+.porcentagens .porcentagem {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 14px 30px 10px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #FFFD09;
+  border: 2px solid #000000;
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 0;
+}
+
+.porcentagens .title {
+  font-family: 'Futura Passata';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 30px 29px 25px 30px;
+  background: #00B9FF;
+  border: 2px solid #000000;
+}
+
+.porcentagens .containerImg {
+  border: 2px solid #000000;
+  border-top: 0px;
+  border-bottom: 0;
+}
+
+.porcentagens img {
+  width: 100%;
+}
+
+.porcentagens p {
+  font-family: sans-serif;
+  padding: 25px 32px 30px 30px;
+  background: #B5FF6B;
+  border: 2px solid #000000;
+}
+
+.porcentagens .paragrafo1 {
+  margin-top: -2px;
+}
+
+.form {
+  padding: 66px 30px;
+  background: #93E7FF;
+}
+
+.form p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.form {
+  padding-top: 37px;
+  padding-bottom: 49px;
+  background-color: #93E7FF;
+}
+
+.form p {
+  font-size: 16px;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+.form input {
+  padding-left: 16px;
+  border: 2px solid #000000;
+  width: -webkit-fill-available;
+  height: 48px;
+  font-size: 19px;
+  color: #808080;
+  border-radius: 0px;
+}
+
+.form input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #808080;
+  font-family: 'Futura Passata';
+}
+
+.form input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #808080;
+  font-family: 'Futura Passata';
+}
+
+.form input::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #808080;
+  font-family: 'Futura Passata';
+}
+
+.form input::placeholder {
+  text-transform: uppercase;
+  color: #808080;
+  font-family: 'Futura Passata';
+}
+
+.form input:nth-child(3) {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.form .btn-join {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-left: 9px;
+  padding-right: 5px;
+  margin-top: 0;
+}
+
+.form .p {
+  margin: 16px 0;
+}
+
+.form .btn-join {
+  margin-top: 20px;
+}
+
+.border-top-0 {
+  border-top: 0;
+}
+
+.nftsHero {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -4px;
+}
+
+.nftsHero img {
+  -webkit-animation: animationNFT 20s linear infinite;
+          animation: animationNFT 20s linear infinite;
+}
+
+@-webkit-keyframes animationNFT {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes animationNFT {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
