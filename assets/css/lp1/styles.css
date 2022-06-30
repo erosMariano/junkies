@@ -266,6 +266,10 @@ table {
   }
 }
 
+.hero img {
+  width: 100%;
+}
+
 .weAreCommunity {
   padding: 66px 30px;
   background: #A4CFF6;
@@ -536,5 +540,239 @@ table {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+}
+
+.accordion {
+  margin-top: -1px;
+  width: 100%;
+  font-family: 'futura passata', sans-serif;
+  overflow-x: hidden;
+}
+
+.accordion.accordionRosa .accordion-item:hover {
+  background-color: #FF39BB;
+}
+
+.accordion .accordion-item {
+  background: #FBF801;
+  color: #111;
+  font-size: 43px;
+  border-top: 3px solid #000;
+}
+
+.accordion .accordion-item:last-child {
+  border-bottom: 3px solid #000;
+}
+
+.accordion .accordion-item-header {
+  padding: .5rem 0rem .5rem 1rem;
+  min-height: 3.5rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion .accordion-item-header.type3,
+.accordion .accordion-item-header .type4 {
+  width: 1780px;
+  margin: 0 auto;
+}
+
+.accordion .accordion-item-header span {
+  margin-right: 18px;
+  font-size: 10px;
+  margin-top: -5px;
+}
+
+.accordion .accordion-item-header::after {
+  content: url("/assets/img/lp/plus.png");
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.accordion .accordion-item-header.active::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.accordion .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .2s ease-out;
+  transition: max-height .2s ease-out;
+  font-family: sans-serif;
+}
+
+.accordion .accordion-item-body-content {
+  font-size: 16px;
+  margin: 0;
+  padding: 24px;
+  padding-top: 0;
+  padding-left: 37px;
+  padding-right: 55px;
+  padding-bottom: 0;
+  font-family: sans-serif;
+  padding-bottom: 23px;
+}
+
+.accordion .accordion-item-body-content.active {
+  background: #53B6F9;
+}
+
+.accordion .accordion-item-body-content a {
+  color: #000;
+}
+
+.accordion img.gif {
+  width: 100%;
+  border: 2px solid #000;
+}
+
+.accordion .felipe {
+  margin: 0 auto;
+  max-width: 345px;
+  margin: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+  margin-bottom: -19px;
+}
+
+.accordion .container {
+  padding: 0;
+}
+
+.accordion .accordion-item {
+  border: 1px solid #000000;
+  border-right: 0;
+  border-left: 0;
+}
+
+.accordion .accordion-item-header {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 25px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+}
+
+.accordion .accordion-item-header span {
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 95%;
+  /* or 9px */
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.accordion .accordion-item-header::after {
+  content: url("../../img/lp/plusMobile.png");
+  margin-top: -8px;
+}
+
+.accordion .accordion-item-header.type3,
+.accordion .accordion-item-header .type4 {
+  width: 100%;
+}
+
+.accordion .accordion-item-body-content {
+  font-size: 16px;
+  padding-left: 50px;
+  font-family: sans-serif;
+}
+
+.accordion .accordion-item-body.type2 .card p {
+  padding: 24px;
+  font-size: 16px;
+}
+
+.accordion .accordion-item-body.type2 .card {
+  width: 100%;
+}
+
+.accordion .accordion-item-body.type2 .card img {
+  height: auto;
+}
+
+.accordion .accordion-item-body.type2 .accordion-item-body-content {
+  padding-right: 33px;
+}
+
+.accordion .accordion-item-body.type3 p {
+  font-size: 16px;
+  margin: 0;
+  padding: 24px;
+  padding-top: 0;
+}
+
+.accordion .accordion-item-body.type3 .accordion-item-body-content img {
+  height: 54px;
+  margin-top: -24px;
+}
+
+.nftCard {
+  width: 354px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.nftCard h2 {
+  background: #FF6600;
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  /* or 263% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 0px;
+  border: 2px solid #000000;
+  border-bottom: 0;
+}
+
+.nftCard p {
+  font-family: 'Microsoft Sans Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.18px;
+  line-height: 110%;
+  color: #000000;
+  background: #fff;
+  padding-top: 35px;
+  padding-left: 42px;
+  padding-right: 34px;
+  padding-bottom: 26px;
+  margin-top: -11px;
+  border: 2px solid #000;
+  border-top: 0;
+}
+
+.nftCard img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
