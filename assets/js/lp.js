@@ -15,7 +15,12 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         const accordionItemBody = accordionItemHeader.nextElementSibling;
 
         if (accordionItemHeader.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px"
+            if (accordionItemBody.scrollHeight == 768) {
+                accordionItemBody.style.maxHeight = "1032px"
+            } else {
+                accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px"
+            }
+
         } else {
             accordionItemBody.style.maxHeight = 0;
         }
@@ -26,7 +31,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 const accordionItem = document.querySelectorAll(".accordion-item")
 accordionItem.forEach((el) => {
     el.addEventListener("click", () => {
-        accordionItem.forEach((accordion) =>{
+        accordionItem.forEach((accordion) => {
             accordion.classList.remove("active")
         })
         el.classList.add("active")

@@ -13,16 +13,17 @@
     <section class="hero">
         <img src="./assets/img/lp/bannerSurf.png" alt="">
     </section>
-    <div class="nftsHero nftsHeroHome">
-        <div class="teste">
-            <img src="./assets/img/lp/nft1.webp" alt="">
-            <img src="./assets/img/lp/nft2.webp" alt="">
-            <img src="./assets/img/lp/nft3.webp" alt="">
-            <img src="./assets/img/lp/nft4.webp" alt="">
-            <img src="./assets/img/lp/nft5.webp" alt="">
-            <img src="./assets/img/lp/nft6.webp" alt="">
-            <img src="./assets/img/lp/nft7.webp" alt="">
-        </div>
+
+    <div class="maquee1">
+        <ul class="maquee1-content">
+            <li><img src="./assets/img/lp/nft1_1.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft2.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft3.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft4.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft5.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft6.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft7.webp" alt=""></li>
+        </ul>
     </div>
 
 
@@ -267,14 +268,16 @@
         </div>
     </section>
 
-    <div class="nftsHero">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
-        <img class="lazy" data-src="./assets/img/lp/nfts-hero.png" alt="">
+    <div class="maquee1 bb-2">
+        <ul class="maquee1-content">
+            <li><img src="./assets/img/lp/nft1_1.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft2.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft3.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft4.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft5.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft6.webp" alt=""></li>
+            <li><img src="./assets/img/lp/nft7.webp" alt=""></li>
+        </ul>
     </div>
 
     <div class="marquee  faq">
@@ -756,6 +759,16 @@
     </div>
 
     <script>
+        const root = document.documentElement;
+        const maquee1ElementsDisplayed = getComputedStyle(root).getPropertyValue("--maquee1-elements-displayed");
+        const maquee1Content = document.querySelector("ul.maquee1-content");
+
+        root.style.setProperty("--maquee1-elements", maquee1Content.children.length);
+
+        for (let i = 0; i < maquee1ElementsDisplayed; i++) {
+            maquee1Content.appendChild(maquee1Content.children[i].cloneNode(true));
+        }
+
 
 
 
