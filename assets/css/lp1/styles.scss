@@ -252,10 +252,12 @@ table {
 .marquee-text.mintdayBoxTeste:before {
 	content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY  ";
 }
-.marquee.mintdayBoxTeste{
+
+.marquee.mintdayBoxTeste {
 	background: #00f89e;
 	border-top: 0;
 }
+
 .marquee-text.mintdayBoxTeste {
 	font-family: 'Futura Passata';
 	font-style: normal;
@@ -323,6 +325,15 @@ table {
 		}
 	}
 
+	.containerForGifs {
+		display: flex;
+
+		img {
+			width: 50%;
+			margin-bottom: 0px
+		}
+	}
+
 	.containerText {
 		padding: 25px 20px 25px 25px;
 		background: #FFFFFF;
@@ -346,6 +357,11 @@ table {
 	border-bottom: 2px solid #000000;
 	font-family: sans-serif;
 	background: #B5FF6B;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16.18px;
+	line-height: 110%;
+	color: #000000;
 }
 
 .porcentagens {
@@ -421,6 +437,11 @@ table {
 
 	.paragrafo1 {
 		margin-top: -2px;
+		font-weight: 400;
+		font-size: 16.18px;
+		line-height: 110%;
+		color: #000000;
+
 	}
 }
 
@@ -1011,7 +1032,7 @@ footer {
 	p {
 		font-family: 'Futura Passata';
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 34px;
 		display: flex;
 		align-items: center;
@@ -1020,3 +1041,4 @@ footer {
 		color: #000000;
 	}
 }
+

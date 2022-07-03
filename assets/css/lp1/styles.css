@@ -343,6 +343,17 @@ table {
   width: 100%;
 }
 
+.cardsNFT .containerForGifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardsNFT .containerForGifs img {
+  width: 50%;
+  margin-bottom: 0px;
+}
+
 .cardsNFT .containerText {
   padding: 25px 20px 25px 25px;
   background: #FFFFFF;
@@ -365,6 +376,11 @@ table {
   border-bottom: 2px solid #000000;
   font-family: sans-serif;
   background: #B5FF6B;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.18px;
+  line-height: 110%;
+  color: #000000;
 }
 
 .porcentagens {
@@ -449,6 +465,10 @@ table {
 
 .porcentagens .paragrafo1 {
   margin-top: -2px;
+  font-weight: 400;
+  font-size: 16.18px;
+  line-height: 110%;
+  color: #000000;
 }
 
 .form {
@@ -1081,7 +1101,7 @@ footer .container {
 footer p {
   font-family: 'Futura Passata';
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
