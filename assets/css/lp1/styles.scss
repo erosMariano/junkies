@@ -245,6 +245,29 @@ table {
 	content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY ";
 }
 
+.marquee-text.real:before {
+	content: "BARRELS ARE THE REAL DOPE • ";
+}
+
+.marquee-text.mintdayBoxTeste:before {
+	content: "MINT DAY • JUNE 18 • INTERNATIONAL SURFING DAY  ";
+}
+.marquee.mintdayBoxTeste{
+	background: #00f89e;
+	border-top: 0;
+}
+.marquee-text.mintdayBoxTeste {
+	font-family: 'Futura Passata';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 34px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	letter-spacing: -0.03em;
+	color: #000000;
+}
 
 .marquee.faq {
 	border-top: 0;
@@ -653,7 +676,6 @@ table {
 		font-size: 18px;
 		padding-left: 20px;
 		padding-right: 32px;
-		line-height: 19px;
 		letter-spacing: -0.03em;
 
 		span {
@@ -725,7 +747,12 @@ table {
 .nftCard {
 	width: 354px;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+
+	@media(max-width: 354px) {
+		width: 95%;
+	}
 
 	h2 {
 		background: #FF6600;
@@ -798,6 +825,7 @@ table {
 	}
 
 	.marquee {
+		border-top: 0;
 		background: #00F89E;
 	}
 
@@ -967,6 +995,28 @@ table {
 		width: 5rem;
 	}
 }
-.bb-2{
+
+.bb-2 {
 	border-bottom: 2px solid #000;
+}
+
+
+footer {
+	.container {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10px;
+	}
+
+	p {
+		font-family: 'Futura Passata';
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 34px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		color: #000000;
+	}
 }
