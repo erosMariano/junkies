@@ -80,6 +80,7 @@ function validateForm(inputPhone) {
 }
 
 
+
 submit.addEventListener("click", () => {
     try {
         validateName(nome)
@@ -87,6 +88,21 @@ submit.addEventListener("click", () => {
         validateForm(phone)
 
         errorMessage.classList.remove("active")
+        submit.classList.add("enviado")
+        submit.innerHTML = "Sent"
+        document.querySelector('.p.sent').style.display = "block"
+        
+        document.querySelector("#mce-EMAIL").value = email.value
+        document.querySelector("#mce-FNAME").value = nome.value
+        document.querySelector("#mce-PHONE").value = phone.value
+
+        document.querySelector("#mc-embedded-subscribe").click()
+        
+        document.querySelectorAll(".form input").forEach((el) => {
+            el.style.backgroundColor = "#969696"
+            el.value = ""
+        })
+
 
     } catch (e) {
         console.log(e.message)
