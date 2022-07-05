@@ -255,7 +255,6 @@ table {
 
 .marquee.mintdayBoxTeste {
 	background: #00f89e;
-	border-top: 0;
 }
 
 .marquee-text.mintdayBoxTeste {
@@ -353,13 +352,13 @@ table {
 }
 
 .greenSection {
-	padding: 40px 30px;
+	padding: 40px 39px 40px 30px;
 	border-bottom: 2px solid #000000;
 	font-family: sans-serif;
 	background: #B5FF6B;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16.18px;
+	font-size: 18px;
 	line-height: 110%;
 	color: #000000;
 }
@@ -438,7 +437,7 @@ table {
 	.paragrafo1 {
 		margin-top: -2px;
 		font-weight: 400;
-		font-size: 16.18px;
+		font-size: 18px;
 		line-height: 110%;
 		color: #000000;
 
@@ -485,13 +484,13 @@ table {
 
 	.btn-join {
 		max-width: fit-content;
-		padding-left: 9px;
-		padding-right: 5px;
+		padding-left: 24.5px;
+		padding-right: 24.5px;
 		margin-top: 0;
 	}
 
 	.p {
-		margin: 16px 0;
+		margin: 40px 0 20px 0;
 	}
 
 	.btn-join {
@@ -590,14 +589,14 @@ table {
 	}
 
 	.accordion-item-header {
-		padding: .5rem 0rem .5rem 1rem;
-		min-height: 3.5rem;
+		padding-top: 20px;
+		padding-bottom: 15px;
 		font-weight: bold;
 		display: flex;
 		align-items: center;
 		position: relative;
 		cursor: pointer;
-
+		align-items: flex-start;
 
 		&.type3,
 		.type4 {
@@ -609,8 +608,8 @@ table {
 
 		span {
 			margin-right: 18px;
-			font-size: 10px;
-			margin-top: -5px;
+			margin-right: 7px;
+			margin-top: 2px;
 		}
 	}
 
@@ -618,12 +617,15 @@ table {
 		content: url("/assets/img/lp/plus.png");
 		font-size: 2rem;
 		position: absolute;
-		right: 1rem;
+		right: 24.03px;
 		transition: .2s linear;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	.accordion-item-header.active::after {
 		transform: rotate(45deg);
+		top: 28%;
 	}
 
 
@@ -639,7 +641,7 @@ table {
 	}
 
 	.accordion-item-body-content {
-		font-size: 16px;
+		font-size: 18px;
 		margin: 0;
 		padding: 24px;
 		padding-top: 0;
@@ -647,7 +649,7 @@ table {
 		padding-right: 55px;
 		padding-bottom: 0;
 		font-family: sans-serif;
-		padding-bottom: 23px;
+		padding-bottom: 30px;
 
 		&.active {
 			background: #53B6F9;
@@ -696,7 +698,7 @@ table {
 	.accordion-item-header {
 		font-size: 18px;
 		padding-left: 20px;
-		padding-right: 32px;
+		padding-right: 38px;
 		letter-spacing: -0.03em;
 
 		span {
@@ -717,7 +719,6 @@ table {
 
 	.accordion-item-header::after {
 		content: url("../../img/lp/plusMobile.png");
-		margin-top: -8px;
 	}
 
 	.accordion-item-header.type3,
@@ -726,10 +727,11 @@ table {
 	}
 
 	.accordion-item-body-content {
-		font-size: 16px;
-		padding-left: 50px;
+		font-size: 18px;
+		padding-left: 39px;
 		font-family: sans-serif;
-
+		margin-top: 5px;
+		line-height: 110%;
 
 	}
 
@@ -768,7 +770,7 @@ table {
 .nftCard {
 	width: 354px;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	margin-top: 10px;
 
 	@media(max-width: 354px) {
@@ -800,7 +802,7 @@ table {
 		font-family: sans-serif;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 16.18px;
+		font-size: 18px;
 		line-height: 110%;
 		color: #000000;
 
@@ -942,15 +944,7 @@ table {
 	margin-top: -2px;
 }
 
-.maquee1:before,
-.maquee1:after {
-	// position: absolute;
-	// top: 0;
-	// width: 10rem;
-	// height: 100%;
-	// content: "";
-	// z-index: 1;
-}
+
 
 .maquee1:before {
 	left: 0;
@@ -1027,12 +1021,14 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 10px;
+		padding-top: 23px;
+		padding-bottom: 36.08px;
 	}
 
 	p {
 		font-family: 'Futura Passata';
 		font-weight: 500;
-		font-size: 18px;
+		font-size: 22px;
 		line-height: 34px;
 		display: flex;
 		align-items: center;
@@ -1042,3 +1038,8 @@ footer {
 	}
 }
 
+@media(max-width :408px) {
+	footer p {
+		font-size: 18px;
+	}
+}
