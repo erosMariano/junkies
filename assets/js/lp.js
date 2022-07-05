@@ -99,7 +99,7 @@ submit.addEventListener("click", () => {
         document.querySelector("#mc-embedded-subscribe").click()
         
         document.querySelectorAll(".form input").forEach((el) => {
-            el.style.backgroundColor = "#969696"
+            el.classList.add("disabled")
             el.value = ""
         })
 

@@ -529,6 +529,10 @@ table {
   font-family: 'Futura Passata';
 }
 
+.form input.disabled {
+  background-color: #969696;
+}
+
 .form input:nth-child(3) {
   border-top: 0;
   border-bottom: 0;
@@ -1151,5 +1155,12 @@ footer p {
 
 #mc_embed_signup {
   display: none;
+}
+
+.nftBorder {
+  border: 1px solid #000;
+  border-top: 0px;
+  border-left: 0;
+  border-bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
