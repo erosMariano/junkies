@@ -133,6 +133,9 @@ table {
 	font-family: 'futura passata';
 	src: url("../../font/FuturaPassata-DISPLAY.otf");
 }
+html{
+	scroll-behavior: smooth;
+}
 
 .error {
 	text-align: center;
