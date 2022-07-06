@@ -90,19 +90,18 @@ submit.addEventListener("click", () => {
         errorMessage.classList.remove("active")
         submit.classList.add("enviado")
         submit.innerHTML = "Sent"
-        document.querySelector('.p.sent').style.display = "block"
-        
+
         document.querySelector("#mce-EMAIL").value = email.value
         document.querySelector("#mce-FNAME").value = nome.value
         document.querySelector("#mce-PHONE").value = phone.value
 
         document.querySelector("#mc-embedded-subscribe").click()
-        
-        document.querySelectorAll(".form input").forEach((el) => {
-            el.classList.add("disabled")
-            el.value = ""
-        })
 
+        document.querySelectorAll(".form input").forEach((el) => {
+            el.style.display = "none"
+        })
+        document.querySelectorAll(".form p")[0].style.display = 'none'
+        document.querySelector(".form p.enviadoText").style.display = 'block'
 
     } catch (e) {
         console.log(e.message)

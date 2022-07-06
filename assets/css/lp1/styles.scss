@@ -133,7 +133,8 @@ table {
 	font-family: 'futura passata';
 	src: url("../../font/FuturaPassata-DISPLAY.otf");
 }
-html{
+
+html {
 	scroll-behavior: smooth;
 }
 
@@ -493,7 +494,7 @@ html{
 		}
 	}
 
-	input.disabled{
+	input.disabled {
 		background-color: #969696;
 	}
 
@@ -1068,11 +1069,11 @@ footer {
 .enviado {
 	background: #B5FF6B;
 	pointer-events: none;
+	width: 100%;
+	max-width: -webkit-fill-available !important;
 }
 
-.p.sent {
-	display: none;
-}
+
 
 #mc_embed_signup {
 	display: none;
@@ -1083,4 +1084,70 @@ footer {
 	border-top: 0px;
 	border-left: 0;
 	border-bottom: 0;
+}
+
+.form p.enviadoText {
+	font-family: 'Futura Passata';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 94%;
+	text-align: justify;
+	color: #000000;
+	display: none;
+	margin-top: -20px;
+}
+
+.desktop {
+	display: none;
+}
+
+@media(min-width:768px) {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+		background: #FFFD09;
+		height: 100vh;
+	}
+
+	.desktop h2 {
+		padding: 162px 137px 111px 138px;
+		font-family: 'Futura Passata';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 84px;
+		line-height: 94%;
+		/* or 79px */
+
+		text-align: justify;
+
+		color: #000000;
+		// height: calc(100vh - 573px);
+	}
+
+	.maquee1 {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media(max-width:1600px) {
+	.desktop h2 {
+		padding: 100px 137px 111px 138px;
+		font-family: 'Futura Passata';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 94%;
+		/* or 79px */
+
+		text-align: justify;
+
+		color: #000000;
+		// height: calc(100vh - 573px);
+	}
 }

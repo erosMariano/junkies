@@ -135,6 +135,10 @@ table {
   src: url("../../font/FuturaPassata-DISPLAY.otf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .error {
   text-align: center;
   color: #fff;
@@ -1147,10 +1151,8 @@ footer p {
 .enviado {
   background: #B5FF6B;
   pointer-events: none;
-}
-
-.p.sent {
-  display: none;
+  width: 100%;
+  max-width: -webkit-fill-available !important;
 }
 
 #mc_embed_signup {
@@ -1162,5 +1164,62 @@ footer p {
   border-top: 0px;
   border-left: 0;
   border-bottom: 0;
+}
+
+.form p.enviadoText {
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 94%;
+  text-align: justify;
+  color: #000000;
+  display: none;
+  margin-top: -20px;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    background: #FFFD09;
+    height: 100vh;
+  }
+  .desktop h2 {
+    padding: 162px 137px 111px 138px;
+    font-family: 'Futura Passata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 94%;
+    /* or 79px */
+    text-align: justify;
+    color: #000000;
+  }
+  .maquee1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 1600px) {
+  .desktop h2 {
+    padding: 100px 137px 111px 138px;
+    font-family: 'Futura Passata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 94%;
+    /* or 79px */
+    text-align: justify;
+    color: #000000;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
