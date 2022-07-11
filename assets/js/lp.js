@@ -16,7 +16,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
         if (accordionItemHeader.classList.contains("active")) {
             if (accordionItemBody.scrollHeight >= 768) {
-                accordionItemBody.style.maxHeight = "1186px"
+                accordionItemBody.style.maxHeight = "10186px"
             } else {
                 accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px"
             }
