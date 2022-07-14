@@ -1125,17 +1125,6 @@ footer {
 		overflow-x: hidden;
 	}
 
-	@keyframes scrolling {
-		0% {
-			transform: translateX(-100%);
-		}
-
-		100% {
-			transform: translateX(0);
-		}
-	}
-
-
 	.btn-join {
 		font-style: normal;
 		font-weight: 700;
@@ -1430,6 +1419,7 @@ footer {
 	.desktop {
 		display: block;
 		background: #FFFD09;
+		height: 100vh;
 	}
 
 	.desktop h2 {
@@ -1447,7 +1437,11 @@ footer {
 		// height: calc(100vh - 573px);
 	}
 
-
+	.maquee1 {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
 }
 
 @media(max-width:1600px) {

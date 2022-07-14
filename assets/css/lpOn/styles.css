@@ -1204,26 +1204,6 @@ footer p {
   body {
     overflow-x: hidden;
   }
-  @-webkit-keyframes scrolling {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
-  @keyframes scrolling {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-  }
   .btn-join {
     font-style: normal;
     font-weight: 700;
@@ -1478,6 +1458,7 @@ footer p {
   .desktop {
     display: block;
     background: #FFFD09;
+    height: 100vh;
   }
   .desktop h2 {
     padding: 162px 137px 111px 138px;
@@ -1489,6 +1470,11 @@ footer p {
     /* or 79px */
     text-align: justify;
     color: #000000;
+  }
+  .maquee1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 }
 
