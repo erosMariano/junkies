@@ -109,3 +109,18 @@ submit.addEventListener("click", () => {
         errorMessage.innerHTML = `${e.message}`
     }
 })
+
+
+
+
+function activeMenuMobile() {
+    setTimeout(() => {
+        const menuMobile = document.querySelector('.MenuMobile')
+        menuMobile.style.display = 'block'
+        menuMobile.style.marginTop = `-${menuMobile.clientHeight}px`
+    }, 2000)
+}
+
+activeMenuMobile()
+
+

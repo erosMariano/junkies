@@ -323,6 +323,10 @@ html {
   }
 }
 
+.hero {
+  margin-top: 55px;
+}
+
 .hero .desktop {
   display: none;
 }
@@ -378,7 +382,13 @@ html {
 
 .cardsNFT .containerForGifs img {
   width: 50%;
-  margin-bottom: 0px;
+  margin-top: -0.5px;
+  margin-bottom: -0.5px;
+}
+
+.cardsNFT .containerForGifs img:nth-child(2) {
+  position: relative;
+  right: 1px;
 }
 
 .cardsNFT .containerText {
@@ -408,6 +418,34 @@ html {
   font-size: 18px;
   line-height: 110%;
   color: #000000;
+}
+
+.MenuMobile {
+  display: none;
+}
+
+.MenuMobile a {
+  font-family: 'Futura Passata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 95%;
+  /* identical to box height, or 43px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  border: 1px solid #000000;
+  border-left: 0;
+  border-right: 0;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 3px;
 }
 
 .porcentagens {
@@ -795,7 +833,7 @@ html {
 .accordion .accordion-item-header {
   font-size: 18px;
   padding-left: 20px;
-  padding-right: 38px;
+  padding-right: 48px;
   letter-spacing: -0.03em;
 }
 
@@ -1174,10 +1212,9 @@ footer p {
 }
 
 .nftBorder {
-  border: 1px solid #000;
-  border-top: 0px;
-  border-left: 0;
-  border-bottom: 0;
+  position: relative;
+  right: 2px;
+  border-left: 2px solid #000;
 }
 
 .form p.enviadoText {
