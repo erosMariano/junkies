@@ -133,5 +133,6 @@ handleActiveMenuMobile()
 menuMobile.querySelectorAll("a").forEach((el) => {
     el.addEventListener("click", () => {
         menuMobile.style.marginTop = `-${menuMobile.clientHeight}px`
+        menuMobile.classList.toggle("active")
     })
 })
