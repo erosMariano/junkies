@@ -137,6 +137,29 @@ table {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 55px;
+}
+
+.menuMobileClick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  background-color: #fff;
+  height: 55px;
+  z-index: 200;
+  border-bottom: 2px solid #000;
+}
+
+.menuMobileClick img {
+  width: 50px;
+  margin-right: 20px;
 }
 
 .error {
@@ -421,7 +444,19 @@ html {
 }
 
 .MenuMobile {
-  display: none;
+  display: block;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 100;
+  margin-top: -513px;
+}
+
+.MenuMobile.active {
+  z-index: 110;
+  top: 55px;
 }
 
 .MenuMobile a {
@@ -446,6 +481,33 @@ html {
   text-decoration: none;
   padding-top: 9px;
   padding-bottom: 3px;
+}
+
+.MenuMobile li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  padding: 9px 0 3px;
+}
+
+.MenuMobile li:last-child {
+  border-bottom: 2px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.MenuMobile li div img {
+  width: 32px;
+}
+
+.MenuMobile li div a {
+  border: 0;
 }
 
 .porcentagens {

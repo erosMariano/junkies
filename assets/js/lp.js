@@ -113,14 +113,25 @@ submit.addEventListener("click", () => {
 
 
 
-function activeMenuMobile() {
-    setTimeout(() => {
-        const menuMobile = document.querySelector('.MenuMobile')
-        menuMobile.style.display = 'block'
-        menuMobile.style.marginTop = `-${menuMobile.clientHeight}px`
-    }, 2000)
+const menuMobile = document.querySelector('.MenuMobile')
+
+
+function handleActiveMenuMobile() {
+    document.querySelector(".menuMobileClick img").addEventListener("click", () => {
+        menuMobile.classList.toggle("active")
+
+        if (menuMobile.classList.contains("active")) {
+            menuMobile.style.marginTop = "0px"
+        } else {
+            menuMobile.style.marginTop = `-${menuMobile.clientHeight}px`
+        }
+    })
 }
 
-activeMenuMobile()
+handleActiveMenuMobile()
 
-
+menuMobile.querySelectorAll("a").forEach((el) => {
+    el.addEventListener("click", () => {
+        menuMobile.style.marginTop = `-${menuMobile.clientHeight}px`
+    })
+})

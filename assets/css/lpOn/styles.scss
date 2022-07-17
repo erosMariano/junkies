@@ -136,6 +136,26 @@ table {
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding: 55px;
+}
+
+
+.menuMobileClick {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	background-color: #fff;
+	height: 55px;
+	z-index: 200;
+	border-bottom: 2px solid #000;
+
+	img {
+		width: 50px;
+		margin-right: 20px;
+	}
 }
 
 .error {
@@ -404,7 +424,18 @@ html {
 
 
 .MenuMobile {
-	display: none;
+	display: block;
+	transition: .3s;
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
+	z-index: 100;
+	margin-top: -513px;
+
+	&.active {
+		z-index: 110;
+		top: 55px;
+	}
 
 	a {
 		font-family: 'Futura Passata';
@@ -427,8 +458,28 @@ html {
 		padding-top: 9px;
 		padding-bottom: 3px;
 	}
-}
 
+	li div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		padding: 9px 0 3px;
+	}
+
+	li:last-child {
+		border-bottom: 2px solid #000000;
+		border-top: 1px solid #000000;
+	}
+
+	li div img {
+		width: 32px;
+	}
+
+	li div a {
+		border: 0;
+	}
+}
 
 
 .porcentagens {
