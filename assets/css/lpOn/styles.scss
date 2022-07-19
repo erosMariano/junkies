@@ -439,12 +439,6 @@ html {
 
 	a {
 		font-family: 'Futura Passata';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 45px;
-		line-height: 95%;
-		/* identical to box height, or 43px */
-
 		display: flex;
 		justify-content: center;
 		letter-spacing: -0.05em;
@@ -455,8 +449,14 @@ html {
 		border-left: 0;
 		border-right: 0;
 		text-decoration: none;
-		padding-top: 9px;
-		padding-bottom: 3px;
+		padding-top: 16px;
+		padding-bottom: 11px;
+
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 95%;
+		border-top: 0;
+		border-bottom: 2px solid #000000;
 	}
 
 	li div {
