@@ -136,6 +136,26 @@ table {
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding: 55px;
+}
+
+
+.menuMobileClick {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	background-color: #fff;
+	height: 55px;
+	z-index: 200;
+	border-bottom: 2px solid #000;
+
+	img {
+		width: 50px;
+		margin-right: 20px;
+	}
 }
 
 .error {
@@ -273,6 +293,11 @@ html {
 	display: none;
 }
 
+.marquee-text.empty:before {
+	content: "empty • ";
+}
+
+
 .marquee.mintdayBoxTeste {
 	background: #00f89e;
 }
@@ -308,6 +333,12 @@ html {
 }
 
 .hero {
+	margin-top: 55px;
+
+	.bannerDesk {
+		display: none;
+	}
+
 	.desktop {
 		display: none;
 	}
@@ -360,7 +391,13 @@ html {
 
 		img {
 			width: 50%;
-			margin-bottom: 0px
+			margin-top: -0.5px;
+			margin-bottom: -0.5px;
+		}
+
+		img:nth-child(2) {
+			position: relative;
+			right: 1px;
 		}
 	}
 
@@ -393,6 +430,66 @@ html {
 	line-height: 110%;
 	color: #000000;
 }
+
+
+.MenuMobile {
+	display: block;
+	transition: .3s;
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
+	z-index: 100;
+	margin-top: -533px;
+
+	&.active {
+		z-index: 110;
+		top: 55px;
+	}
+
+	a {
+		font-family: 'Futura Passata';
+		display: flex;
+		justify-content: center;
+		letter-spacing: -0.05em;
+		text-transform: uppercase;
+
+		color: #000000;
+		border: 1px solid #000000;
+		border-left: 0;
+		border-right: 0;
+		text-decoration: none;
+		padding-top: 16px;
+		padding-bottom: 11px;
+
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 95%;
+		border-top: 0;
+		border-bottom: 2px solid #000000;
+	}
+
+	li div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		padding: 9px 0 3px;
+	}
+
+	li:last-child {
+		border-bottom: 2px solid #000000;
+		border-top: 1px solid #000000;
+	}
+
+	li div img {
+		width: 32px;
+	}
+
+	li div a {
+		border: 0;
+	}
+}
+
 
 .porcentagens {
 	padding: 66px 30px;
@@ -733,7 +830,7 @@ html {
 	.accordion-item-header {
 		font-size: 18px;
 		padding-left: 20px;
-		padding-right: 38px;
+		padding-right: 48px;
 		letter-spacing: -0.03em;
 
 		span {
@@ -1094,10 +1191,9 @@ footer {
 }
 
 .nftBorder {
-	border: 1px solid #000;
-	border-top: 0px;
-	border-left: 0;
-	border-bottom: 0;
+	position: relative;
+	right: 2px;
+	border-left: 2px solid #000;
 }
 
 .form p.enviadoText {
@@ -1120,9 +1216,46 @@ footer {
 	display: none;
 }
 
-@media(min-width:1200px) {
-	body {
-		overflow-x: hidden;
+.desktop {
+	display: none;
+}
+
+@media(min-width:900px) {
+	.mobile {
+		display: block;
+	}
+
+	.mobileEdit {
+		display: none;
+	}
+
+	.marquee {
+		border-width: 3px;
+	}
+
+	.desktop {
+		display: flex;
+	}
+
+	.MenuMobile,
+	.menuMobileClick {
+		display: none;
+	}
+
+	.hero {
+		margin-top: 0;
+
+		img {
+			width: 100%;
+		}
+
+		.bannerMobile {
+			display: none;
+		}
+
+		.bannerDesk {
+			display: block;
+		}
 	}
 
 	@keyframes scrolling {
@@ -1136,333 +1269,49 @@ footer {
 	}
 
 
-	.btn-join {
+	.tagSection {
+		border: 4px solid #000;
+		background-color: #fff;
+		font-family: 'Futura Passata';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 62.95px;
-		line-height: 95%;
-		letter-spacing: -0.05em;
-		text-transform: uppercase;
-	}
-
-	.hero {
-		img.desktop {
-			display: block;
-		}
-
-		img.mobile {
-			display: none;
-		}
-	}
-
-	.marquee {
-		border-width: 3px;
-	}
-
-	.marquee.welcome {
-		display: flex;
-	}
-
-	.marquee-text.junkieClub:before {
-		content: "OUR VISION •  ";
-	}
-
-	.weAreCommunity p {
-		font-weight: 700;
-		font-size: 70px;
+		font-size: 63.9688px;
 		line-height: 95%;
 		text-align: justify;
-		letter-spacing: -0.07em;
+		letter-spacing: -0.05em;
 		text-transform: uppercase;
 		color: #000000;
+		width: fit-content;
+		margin-bottom: 78.19px;
+
+		span {
+			padding: 13.9062px 26.4219px;
+		}
+
+		h2 {
+			padding: 13.9062px 26.4219px;
+			border-left: 4px solid #000;
+		}
 	}
 
-	.weAreCommunity .btn-join {
-		margin-top: 92px;
+	.btn-join {
+		font-weight: 700;
+		font-size: 45.3774px;
+		line-height: 95%;
+		border: 3px solid #000000;
+		padding: 9.86466px 18.7429px;
 	}
 
 	.weAreCommunity {
-		padding: 98px 80px 92px 85px;
+		border-top: 4px solid #000000;
+		padding: 85px 77px 97.27px 57px;
 	}
 
-	.cardsNFT {
-		padding: 130px 92px;
-
-		.card {
-			display: flex;
-		}
-
-		p {
-			font-weight: 400;
-			font-size: 41px;
-			line-height: 46px;
-			margin-bottom: 55px;
-		}
-
-		.containerImage {
-			border-width: 4px;
-			display: flex;
-			flex-basis: 50%;
-		}
-
-		.containerText {
-			border: 4px solid #000000;
-			border-left: 0px;
-			padding: 46px 55px 64px 67px;
-			flex-basis: 50%;
-		}
-	}
-
-	.nftBorder {
-		border-width: 4px;
-	}
-
-	.containerForGifs+.containerText {
-		border: 4px solid #000000;
-	}
-
-	.containerImage.surfJunkieImg img {
-		margin-bottom: 0 !important;
-	}
-
-	.greenSection {
-		font-weight: 400;
-		font-size: 41px;
-		line-height: 110%;
-		color: #000000;
-		padding: 69px 162px 69px 150px;
-	}
-
-	.mobile {
-		display: none;
-	}
-
-	.desktop {
-		display: block;
-	}
-
-	.porcentagensDesk {
-		background: #EF3443;
-		position: relative;
-
-		&:after {
-			position: absolute;
-			content: url("../../img/lp/stroke-cards.svg");
-			left: 50%;
-			top: 117px;
-		}
-
-		.container {
-			max-width: 1344px;
-			margin: 0 auto;
-			padding-top: 131px;
-			padding-bottom: 103px;
-
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.cardPorcentagem {
-			max-width: 606px;
-		}
-
-		.text1 {
-			font-family: 'Futura Passata';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 79px;
-			line-height: 100px;
-
-			text-align: center;
-			letter-spacing: -0.03em;
-			text-transform: uppercase;
-			color: #000000;
-			background: #FFFD09;
-			border: 4px solid #000000;
-			padding: 8px 30px;
-
-			display: block;
-			width: fit-content;
-			border-bottom: 0;
-		}
-
-		.text2 {
-			font-family: 'Futura Passata';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 84px;
-			line-height: 79px;
-			letter-spacing: -0.03em;
-			text-transform: uppercase;
-			color: #000000;
-			background: #00B9FF;
-			border-bottom: 4px solid #000000;
-			padding: 30px 44px 30px 30px;
-		}
-
-		.borderCard {
-			border: 4px solid #000000;
-		}
-
-		.containerImg {
-			width: 100%;
-
-			img {
-				width: 100%;
-				margin-bottom: -3px;
-			}
-		}
-
-		.text3 {
-			font-style: normal;
-			font-weight: 400;
-			font-size: 35px;
-			line-height: 110%;
-			color: #000000;
-			padding: 40px 37px;
-			font-family: sans-serif;
-			background: #B5FF6B;
-			border: 4px solid #000000;
-			border-top: 0;
-		}
-
-		.middleCard {
-			margin: 125px 0;
-		}
-
-		.cardMeet {
-			margin-top: 642px;
-			margin-bottom: 144px;
-		}
-	}
-
-
-	.form {
-		padding: 63px 167px 107px 171px;
-
-		p {
-			font-weight: 400;
-			font-size: 41px;
-			line-height: 110%;
-			color: #000000;
-			margin-bottom: 85px;
-		}
-
-		input {
-			height: 107px;
-			font-weight: 700;
-			font-size: 43px;
-			line-height: 100px;
-			letter-spacing: -0.03em;
-			text-transform: uppercase;
-			border: 4px solid #000000;
-		}
-
-		.btn-join {
-			margin-top: 66px;
-		}
-
-		.p {
-			margin-top: 61px;
-		}
-	}
-
-	.accordion .accordion-item-header {
-		font-weight: 700;
-		font-size: 43px;
-		line-height: 100px;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
-		padding-top: 0;
-		padding-bottom: 0;
-		padding-left: 125px;
-	}
-
-	.accordion .accordion-item-body-content {
-		padding-left: 125px;
-	}
-
-	.accordion .accordion-item-body-content {
-		font-size: 41px;
-	}
-
-	.accordion .accordion-item-header span {
-		font-weight: 700;
-		font-size: 27px;
-		line-height: 100px;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
-		margin-top: -8px;
-	}
-
-	footer {
-		.container {
-			padding-left: 99px;
-			padding-right: 117px;
-		}
-
-		p {
-			font-family: 'Futura Passata';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 50px;
-			line-height: 100px;
-			/* identical to box height, or 200% */
-
-			letter-spacing: -0.05em;
-			text-transform: uppercase;
-
-			color: #000000;
-		}
-
-	}
-}
-
-.desktop {
-	display: none;
-}
-
-@media(min-width:768px) {
-	.mobile {
-		display: none;
-	}
-
-	.desktop {
-		display: block;
-		background: #FFFD09;
-	}
-
-	.desktop h2 {
-		padding: 162px 137px 111px 138px;
-		font-family: 'Futura Passata';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 84px;
-		line-height: 94%;
-		/* or 79px */
-
+	.weAreCommunity p {
+		font-size: 73px;
+		line-height: 95%;
 		text-align: justify;
-
-		color: #000000;
-		// height: calc(100vh - 573px);
-	}
-
-
-}
-
-@media(max-width:1600px) {
-	.desktop h2 {
-		padding: 100px 137px 111px 138px;
-		font-family: 'Futura Passata';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 60px;
-		line-height: 94%;
-		/* or 79px */
-
-		text-align: justify;
-
-		color: #000000;
-		// height: calc(100vh - 573px);
+		letter-spacing: -0.07em;
+		margin-bottom: 93px;
 	}
 }

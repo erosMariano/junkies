@@ -292,6 +292,9 @@ html {
 	border-bottom: 3px solid #000;
 	display: none;
 }
+.marquee-text.empty:before {
+	content: "empty • ";
+}
 
 .marquee.mintdayBoxTeste {
 	background: #00f89e;
