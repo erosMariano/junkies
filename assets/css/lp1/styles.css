@@ -152,7 +152,7 @@ html {
           justify-content: flex-end;
   width: 100%;
   background-color: #fff;
-  height: 55px;
+  height: 27px;
   z-index: 200;
   border-bottom: 2px solid #000;
 }
@@ -459,7 +459,7 @@ html {
   background-color: #fff;
   width: 100%;
   z-index: 100;
-  margin-top: -533px;
+  margin-top: -592px;
 }
 
 .MenuMobile.active {
@@ -1312,6 +1312,9 @@ footer p {
 }
 
 @media (min-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
   .mobile {
     display: block;
   }
@@ -1442,6 +1445,11 @@ footer p {
     width: 50%;
     border: 3px solid #000000;
   }
+  .cardsNFT .card .containerImage img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .cardsFounders {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1498,6 +1506,174 @@ footer p {
     margin-top: -5px;
     z-index: 1;
     position: relative;
+  }
+  .porcentagens-desk {
+    background-color: #EF3443;
+    border: 4px solid #000000;
+    border-right: 0;
+    border-left: 0;
+    padding-top: 91px;
+    padding-left: 57px;
+    padding-right: 57px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: -108px;
+  }
+  .porcentagens-desk div {
+    margin-bottom: 97px;
+  }
+  .porcentagens-desk .containerCards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1015px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .porcentagens-desk .lateralEsquerda h4 {
+    margin-left: auto;
+  }
+  .porcentagens-desk .stroke {
+    margin-top: 44px;
+  }
+  .porcentagens-desk .card {
+    width: 458px;
+  }
+  .porcentagens-desk .card div {
+    border: 3px solid #000;
+  }
+  .porcentagens-desk .card h4 {
+    font-family: 'Futura Passata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65.7124px;
+    line-height: 83px;
+    /* or 127% */
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding: 6.65442px 24.9541px;
+    color: #000000;
+    background: #FFFD09;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 3px solid #000;
+    border-bottom: 0;
+  }
+  .porcentagens-desk .card h3 {
+    font-family: 'Futura Passata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 66px;
+    /* or 93% */
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding: 24.9541px;
+    padding-bottom: 4px;
+    color: #000000;
+    background: #00B9FF;
+    width: auto;
+  }
+  .porcentagens-desk .card img {
+    width: 100%;
+  }
+  .porcentagens-desk .card p {
+    margin-top: -3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29.1131px;
+    line-height: 110%;
+    color: #000000;
+    background: #B5FF6B;
+    font-family: sans-serif;
+    padding: 33.2721px;
+    border-top: 3px solid #000000;
+    position: relative;
+    z-index: 1;
+  }
+  .form {
+    border: 4px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 88px;
+    padding-left: 56.87px;
+    padding-right: 171.81px;
+  }
+  .form p {
+    font-size: 34.1039px;
+    line-height: 110%;
+    margin-bottom: 53.65px;
+  }
+  .form input {
+    height: 81.92px;
+    border: 3.32721px solid #000000;
+    font-size: 35.7675px;
+    line-height: 83px;
+  }
+  .form .p {
+    margin: 49.11px 0 49.5px 0;
+  }
+  .form .btn-join {
+    margin-top: 47.03px;
+  }
+  .accordionBlue {
+    background-color: #FFFD09;
+  }
+  .accordionBlue .tagSection {
+    margin-top: 81px;
+    margin-left: 56.87px;
+  }
+  .accordion .accordion-item-header {
+    font-size: 52px;
+    line-height: 95%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding-top: 67.53px;
+    padding-bottom: 50.65px;
+    padding-left: 67.53px;
+    padding-right: 154px;
+    border: 0;
+  }
+  .accordion .accordion-item {
+    border: 3px solid #000000;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+  }
+  .accordion .accordion-item-header::after {
+    right: 87px;
+    content: url("../../img/lp/plus.png");
+  }
+  .accordion .accordion-item-header span {
+    font-size: 33.7674px;
+    line-height: 95%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  .accordion .accordion-item-body-content {
+    padding-left: 67px;
+    padding-right: 153px;
+    font-size: 34.1039px;
+  }
+  .accordion .accordion-item-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
