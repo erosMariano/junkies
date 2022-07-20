@@ -1225,7 +1225,8 @@ footer {
 		display: block;
 	}
 
-	.mobileEdit {
+	.mobileEdit,
+	#theClub {
 		display: none;
 	}
 
@@ -1304,6 +1305,7 @@ footer {
 
 	.weAreCommunity {
 		border-top: 4px solid #000000;
+		border-bottom: 4px solid #000000;
 		padding: 85px 77px 97.27px 57px;
 	}
 
@@ -1314,4 +1316,92 @@ footer {
 		letter-spacing: -0.07em;
 		margin-bottom: 93px;
 	}
+
+	.cardsNFT {
+		padding-left: 57px;
+		padding-right: 62px;
+		padding-top: 73px;
+	}
+
+	.cardsNFT .card {
+		display: flex;
+
+		.containerText {
+			width: 50%;
+			padding: 53px 41px 51.27px 52px;
+			border: 3px solid #000000;
+			border-left: 0;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			p {
+				font-weight: 400;
+				font-size: 31.18px;
+				line-height: 35px;
+				margin-bottom: 43px;
+			}
+		}
+
+		.containerImage {
+			width: 50%;
+			border: 3px solid #000000;
+		}
+	}
+
+	.cardsFounders {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 33px;
+	}
+
+	.founders {
+		padding: 70px 86px 95.25px 68px;
+		background-color: #00B9FF;
+
+		display: flex;
+		flex-direction: column;
+
+		.card {
+			width: 413.29px;
+
+			h3 {
+				background: #FF6600;
+				font-family: 'Futura Passata';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 44.8716px;
+				line-height: 95%;
+				letter-spacing: -0.03em;
+				text-transform: uppercase;
+				color: #000000;
+				padding: 23.6166px 23.6166px 18.8933px;
+				border: 2px solid #000000;
+				border-bottom: 0;
+			}
+
+			img {
+				width: 100%;
+				border: 0;
+			}
+
+			p {
+				padding: 29.5208px 29.5208px 35.425px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 31px;
+				line-height: 110%;
+				color: #000000;
+				font-family: sans-serif;
+				background: #fff;
+				border: 2px solid #000000;
+				margin-top: -5px;
+				z-index: 1;
+				position: relative;
+			}
+		}
+	}
+
 }
