@@ -292,8 +292,9 @@ html {
 	border-bottom: 3px solid #000;
 	display: none;
 }
-.marquee-text.empty:before {
-	content: "empty • empty • empty •";
+
+.marquee-text.pricing:before {
+	content: "pricing  • pricing  • pricing  •";
 }
 
 .marquee.mintdayBoxTeste {
@@ -433,7 +434,7 @@ html {
 	background-color: #fff;
 	width: 100%;
 	z-index: 100;
-	margin-top: -533px;
+	margin-top: -592px;
 
 	&.active {
 		z-index: 110;
@@ -452,14 +453,12 @@ html {
 		border-left: 0;
 		border-right: 0;
 		text-decoration: none;
-		padding-top: 16px;
-		padding-bottom: 11px;
+		padding-top: 8.74px;
+		padding-bottom: 5.26px;
 
 		font-weight: 700;
-		font-size: 30px;
+		font-size: 15.747px;
 		line-height: 95%;
-		border-top: 0;
-		border-bottom: 2px solid #000000;
 	}
 
 	li div {
@@ -476,7 +475,7 @@ html {
 	}
 
 	li div img {
-		width: 32px;
+		width: 24px;
 	}
 
 	li div a {

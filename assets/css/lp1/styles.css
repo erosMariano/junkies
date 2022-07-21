@@ -303,8 +303,8 @@ html {
   display: none;
 }
 
-.marquee-text.empty:before {
-  content: "empty • ";
+.marquee-text.pricing:before {
+  content: "pricing  • pricing  • pricing  •";
 }
 
 .marquee.mintdayBoxTeste {
@@ -459,7 +459,7 @@ html {
   background-color: #fff;
   width: 100%;
   z-index: 100;
-  margin-top: -592px;
+  margin-top: -331px;
 }
 
 .MenuMobile.active {
