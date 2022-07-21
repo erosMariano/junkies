@@ -495,7 +495,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 16px;
+  gap: 5px;
   padding: 9px 0 3px;
 }
 
@@ -505,7 +505,7 @@ html {
 }
 
 .MenuMobile li div img {
-  width: 24px;
+  width: 19px;
 }
 
 .MenuMobile li div a {
