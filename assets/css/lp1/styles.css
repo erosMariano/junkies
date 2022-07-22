@@ -137,29 +137,7 @@ table {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 55px;
-}
-
-.menuMobileClick {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-  background-color: #fff;
-  height: 27px;
-  z-index: 200;
-  border-bottom: 2px solid #000;
-}
-
-.menuMobileClick img {
-  width: 27px;
-  margin-right: 20px;
+  scroll-padding: 35px;
 }
 
 .error {
@@ -351,7 +329,7 @@ html {
 }
 
 .hero {
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .hero .bannerDesk {
@@ -451,6 +429,28 @@ html {
   color: #000000;
 }
 
+.menuMobileClick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  background-color: #fff;
+  height: 35px;
+  z-index: 200;
+  border-bottom: 2px solid #000;
+}
+
+.menuMobileClick img {
+  width: 27px;
+  margin-right: 20px;
+}
+
 .MenuMobile {
   display: block;
   -webkit-transition: .3s;
@@ -459,12 +459,12 @@ html {
   background-color: #fff;
   width: 100%;
   z-index: 100;
-  margin-top: -331px;
+  margin-top: -346px;
 }
 
 .MenuMobile.active {
   z-index: 110;
-  top: 55px;
+  top: 35px;
 }
 
 .MenuMobile a {
@@ -482,13 +482,11 @@ html {
   border-left: 0;
   border-right: 0;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 11px;
+  padding-top: 8.74px;
+  padding-bottom: 5.26px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 15.747px;
   line-height: 95%;
-  border-top: 0;
-  border-bottom: 2px solid #000000;
 }
 
 .MenuMobile li div {
@@ -501,7 +499,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 16px;
+  gap: 5px;
   padding: 9px 0 3px;
 }
 
@@ -511,7 +509,7 @@ html {
 }
 
 .MenuMobile li div img {
-  width: 32px;
+  width: 19px;
 }
 
 .MenuMobile li div a {

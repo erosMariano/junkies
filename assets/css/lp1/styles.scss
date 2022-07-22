@@ -136,27 +136,11 @@ table {
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding: 55px;
+	scroll-padding: 35px;
 }
 
 
-.menuMobileClick {
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	background-color: #fff;
-	height: 27px;
-	z-index: 200;
-	border-bottom: 2px solid #000;
 
-	img {
-		width: 27px;
-		margin-right: 20px;
-	}
-}
 
 .error {
 	text-align: center;
@@ -333,7 +317,7 @@ html {
 }
 
 .hero {
-	margin-top: 55px;
+	margin-top: 35px;
 
 	.bannerDesk {
 		display: none;
@@ -432,6 +416,23 @@ html {
 }
 
 
+.menuMobileClick {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	background-color: #fff;
+	height: 35px;
+	z-index: 200;
+	border-bottom: 2px solid #000;
+
+	img {
+		width: 27px;
+		margin-right: 20px;
+	}
+}
 .MenuMobile {
 	display: block;
 	transition: .3s;
@@ -439,11 +440,11 @@ html {
 	background-color: #fff;
 	width: 100%;
 	z-index: 100;
-	margin-top: -331px;
+	margin-top: -346px;
 
 	&.active {
 		z-index: 110;
-		top: 55px;
+		top: 35px;
 	}
 
 	a {
@@ -458,21 +459,19 @@ html {
 		border-left: 0;
 		border-right: 0;
 		text-decoration: none;
-		padding-top: 16px;
-		padding-bottom: 11px;
+		padding-top: 8.74px;
+		padding-bottom: 5.26px;
 
 		font-weight: 700;
-		font-size: 30px;
+		font-size: 15.747px;
 		line-height: 95%;
-		border-top: 0;
-		border-bottom: 2px solid #000000;
 	}
 
 	li div {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 16px;
+		gap: 5px;
 		padding: 9px 0 3px;
 	}
 
@@ -482,7 +481,7 @@ html {
 	}
 
 	li div img {
-		width: 32px;
+		width: 19px;
 	}
 
 	li div a {
