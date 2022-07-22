@@ -1325,16 +1325,30 @@ footer {
 		padding-left: 57px;
 		padding-right: 62px;
 		padding-top: 73px;
+		padding-bottom: 0;
+
+		.tagSection {
+			margin-bottom: 73px;
+		}
+
+		&.first {
+			padding-top: 91px;
+		}
+
+		&.last {
+			padding-bottom: 80px;
+		}
 	}
 
 	.cardsNFT .card {
 		display: flex;
+		flex-direction: row-reverse;
 
 		.containerText {
-			width: 50%;
+			width: 45%;
 			padding: 53px 41px 51.27px 52px;
 			border: 3px solid #000000;
-			border-left: 0;
+			border-right: 0;
 
 			display: flex;
 			flex-direction: column;
@@ -1372,6 +1386,11 @@ footer {
 
 		display: flex;
 		flex-direction: column;
+		border-top: 4px solid #000000;
+
+		.tagSection {
+			margin-bottom: 46px;
+		}
 
 		.card {
 			width: 413.29px;
@@ -1419,8 +1438,8 @@ footer {
 		border-right: 0;
 		border-left: 0;
 		padding-top: 91px;
-		padding-left: 57px;
-		padding-right: 57px;
+		padding-left: 67px;
+		padding-right: 67px;
 
 		display: flex;
 		flex-direction: column;
@@ -1430,6 +1449,10 @@ footer {
 
 		div {
 			margin-bottom: 97px;
+		}
+
+		.tagSection {
+			margin-bottom: 112.83px;
 		}
 
 		.containerCards {
@@ -1489,6 +1512,7 @@ footer {
 				color: #000000;
 				background: #00B9FF;
 				width: auto;
+				border-bottom: 3px solid;
 			}
 
 			img {
@@ -1522,6 +1546,10 @@ footer {
 		padding-left: 56.87px;
 		padding-right: 171.81px;
 
+
+		.tagSection {
+			margin-bottom: 41px;
+		}
 
 		p {
 			font-size: 34.1039px;
@@ -1565,6 +1593,9 @@ footer {
 		padding-right: 154px;
 
 		border: 0;
+
+		display: flex;
+		align-items: flex-start;
 	}
 
 	.accordion .accordion-item {
@@ -1576,7 +1607,15 @@ footer {
 
 	.accordion .accordion-item-header::after {
 		right: 87px;
+		top: auto;
+		height: 40px;
+		width: 40px;
 		content: url("../../img/lp/plus.png");
+		top: 89px;
+	}
+
+	.accordion .accordion-item-header.active::after {
+		top: 69px;
 	}
 
 	.accordion .accordion-item-header span {
@@ -1584,17 +1623,37 @@ footer {
 		line-height: 95%;
 		letter-spacing: -0.03em;
 		text-transform: uppercase;
-		margin-right: 10px;
+		margin-right: 28px;
 	}
+
 
 	.accordion .accordion-item-body-content {
 		padding-left: 67px;
 		padding-right: 153px;
 		font-size: 34.1039px;
 	}
-	.accordion .accordion-item-body{
+
+	.accordion .accordion-item-body {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 40px;
+	}
+
+	.accordionBlue .tagSection {
+		margin-bottom: 79.29px;
+	}
+
+	.marquee-text {
+		font-size: 64.0488px;
+	}
+
+	.marquee-text.mintdayBoxTeste {
+		font-size: 37.4311px;
+	}
+
+	footer p {
+		font-size: 37.4311px;
+		line-height: 83px;
+		letter-spacing: -0.03em;
 	}
 }

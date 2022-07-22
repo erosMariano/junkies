@@ -1413,17 +1413,31 @@ footer p {
     padding-left: 57px;
     padding-right: 62px;
     padding-top: 73px;
+    padding-bottom: 0;
+  }
+  .cardsNFT .tagSection {
+    margin-bottom: 73px;
+  }
+  .cardsNFT.first {
+    padding-top: 91px;
+  }
+  .cardsNFT.last {
+    padding-bottom: 80px;
   }
   .cardsNFT .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .cardsNFT .card .containerText {
-    width: 50%;
+    width: 45%;
     padding: 53px 41px 51.27px 52px;
     border: 3px solid #000000;
-    border-left: 0;
+    border-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1471,6 +1485,10 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-top: 4px solid #000000;
+  }
+  .founders .tagSection {
+    margin-bottom: 46px;
   }
   .founders .card {
     width: 413.29px;
@@ -1513,8 +1531,8 @@ footer p {
     border-right: 0;
     border-left: 0;
     padding-top: 91px;
-    padding-left: 57px;
-    padding-right: 57px;
+    padding-left: 67px;
+    padding-right: 67px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1527,6 +1545,9 @@ footer p {
   }
   .porcentagens-desk div {
     margin-bottom: 97px;
+  }
+  .porcentagens-desk .tagSection {
+    margin-bottom: 112.83px;
   }
   .porcentagens-desk .containerCards {
     display: -webkit-box;
@@ -1584,6 +1605,7 @@ footer p {
     color: #000000;
     background: #00B9FF;
     width: auto;
+    border-bottom: 3px solid;
   }
   .porcentagens-desk .card img {
     width: 100%;
@@ -1609,6 +1631,9 @@ footer p {
     padding-top: 88px;
     padding-left: 56.87px;
     padding-right: 171.81px;
+  }
+  .form .tagSection {
+    margin-bottom: 41px;
   }
   .form p {
     font-size: 34.1039px;
@@ -1644,6 +1669,12 @@ footer p {
     padding-left: 67.53px;
     padding-right: 154px;
     border: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .accordion .accordion-item {
     border: 3px solid #000000;
@@ -1653,14 +1684,21 @@ footer p {
   }
   .accordion .accordion-item-header::after {
     right: 87px;
+    top: auto;
+    height: 40px;
+    width: 40px;
     content: url("../../img/lp/plus.png");
+    top: 89px;
+  }
+  .accordion .accordion-item-header.active::after {
+    top: 69px;
   }
   .accordion .accordion-item-header span {
     font-size: 33.7674px;
     line-height: 95%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin-right: 28px;
   }
   .accordion .accordion-item-body-content {
     padding-left: 67px;
@@ -1674,6 +1712,20 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 40px;
+  }
+  .accordionBlue .tagSection {
+    margin-bottom: 79.29px;
+  }
+  .marquee-text {
+    font-size: 64.0488px;
+  }
+  .marquee-text.mintdayBoxTeste {
+    font-size: 37.4311px;
+  }
+  footer p {
+    font-size: 37.4311px;
+    line-height: 83px;
+    letter-spacing: -0.03em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

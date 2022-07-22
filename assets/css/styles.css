@@ -11,11 +11,11 @@ html {
 
 .mask1 {
   -webkit-mask-image: url("../img/moldura-letas.png");
-          mask-image: url("../img/moldura-letas.png");
+  mask-image: url("../img/moldura-letas.png");
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   -webkit-mask-position: 0px 0px;
-          mask-position: 0px 0px;
+  mask-position: 0px 0px;
   background: #F74326;
   position: absolute;
   top: 50px;
@@ -28,13 +28,14 @@ html {
   top: -9px;
   left: 0;
   -webkit-animation: animationFonte 20s linear infinite;
-          animation: animationFonte 20s linear infinite;
+  animation: animationFonte 20s linear infinite;
 }
 
 @-webkit-keyframes animationFonte {
   0% {
     left: 0px;
   }
+
   100% {
     left: -1500px;
   }
@@ -44,6 +45,7 @@ html {
   0% {
     left: 0px;
   }
+
   100% {
     left: -1500px;
   }
@@ -116,7 +118,7 @@ html {
   background-position: -1113px 5px;
   background-repeat: no-repeat;
   -webkit-animation: animationBackground 20s linear infinite;
-          animation: animationBackground 20s linear infinite;
+  animation: animationBackground 20s linear infinite;
   background-color: #FCFCF5;
 }
 
@@ -132,6 +134,7 @@ html {
   0% {
     background-position: -990px 80px;
   }
+
   100% {
     background-position: 0px 80px;
   }
@@ -141,6 +144,7 @@ html {
   0% {
     background-position: -990px 80px;
   }
+
   100% {
     background-position: 0px 80px;
   }
@@ -190,17 +194,17 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -220,7 +224,7 @@ html {
   border: 3px solid #FF4139;
   border-left-color: transparent;
   -webkit-animation: animationLoader 1s linear infinite;
-          animation: animationLoader 1s linear infinite;
+  animation: animationLoader 1s linear infinite;
   position: relative;
   left: 0px;
   display: none;
@@ -229,14 +233,14 @@ html {
 @-webkit-keyframes animationLoader {
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes animationLoader {
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -244,96 +248,117 @@ html {
   .input-img {
     width: 409px;
   }
+
   .input-img img {
     width: 101%;
   }
+
   .input-img input {
     height: 27px;
     width: 253px;
     font-size: 19px;
   }
+
   .input-img button {
     height: 35px;
     width: 137px;
   }
+
   .div-loading {
     position: relative;
     left: 163px;
     width: 35px;
     height: 35px;
   }
+
   .container-image {
     width: 406px;
     height: 281px;
   }
+
   @-webkit-keyframes animationBackground {
     0% {
       background-position: -1075px 0px;
     }
+
     100% {
       background-position: 0px 0px;
     }
   }
+
   @keyframes animationBackground {
     0% {
       background-position: -1075px 0px;
     }
+
     100% {
       background-position: 0px 0px;
     }
   }
+
   .container-home {
     background-image: url(../img/nfts-page.png);
     -webkit-animation: backgroundPage 20s linear infinite;
-            animation: backgroundPage 20s linear infinite;
+    animation: backgroundPage 20s linear infinite;
   }
+
   @-webkit-keyframes backgroundPage {
     0% {
       background-position: -1000px 0px;
     }
+
     100% {
       background-position: -5326px 5px;
     }
   }
+
   @keyframes backgroundPage {
     0% {
       background-position: -1000px 0px;
     }
+
     100% {
       background-position: -5326px 5px;
     }
   }
+
   .container-home .molduraGeral {
     width: 409px;
     height: 286.42px;
     left: -2.5px;
   }
+
   .stroke img {
     width: 408px;
     height: 188.62px;
   }
+
   .mask1 {
     -webkit-mask-image: url("../img/moldura-letras-400.png");
-            mask-image: url("../img/moldura-letras-400.png");
+    mask-image: url("../img/moldura-letras-400.png");
     top: 30px;
     left: -1px;
   }
+
   .stroke {
     width: 409px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     top: 32px;
   }
+
   .container-image .instagram {
     height: 29px;
     width: 82px;
   }
+
   .container-image .discord {
     left: 176px;
     width: 76px;
     height: 30px;
   }
+
   .container-image .twwiter {
     width: 75px;
     height: 29px;
@@ -346,60 +371,72 @@ html {
     width: 25px;
     height: 25px;
   }
+
   .input-img {
     margin-top: 20px;
     width: 351.5px;
   }
+
   .input-img input {
     width: 214px;
     height: 24px;
     padding-top: 5px;
     font-size: 1rem;
   }
+
   .input-img button {
     width: 114px;
     height: 30px;
   }
+
   .mask1 {
     -webkit-mask-image: url(../img/moldura-letras-300.png);
-            mask-image: url(../img/moldura-letras-300.png);
+    mask-image: url(../img/moldura-letras-300.png);
     top: 26px;
     left: 1px;
   }
+
   .stroke {
     width: 99%;
     top: 28px;
     left: 50.24%;
   }
+
   .stroke img {
     width: 101%;
     height: 100%;
     left: -1px;
     position: relative;
   }
+
   .container-home .molduraGeral {
     width: 353px;
     height: 248.42px;
     left: 0px;
   }
+
   .container-image {
     height: 237px;
     width: 352px;
     overflow: initial;
     top: 0px;
   }
+
   .container-image .instagram {
     bottom: -11px;
     left: 8px;
   }
+
   .container-image .discord {
     left: 146px;
     bottom: -11px;
   }
+
   .container-image .twwiter {
     bottom: -11px;
     width: 75px;
     height: 29px;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
