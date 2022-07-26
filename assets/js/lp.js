@@ -1,3 +1,6 @@
+jQuery(function () {
+    $("#phone").mask("(999) 9999-99999");
+});
 
 
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
@@ -40,10 +43,15 @@ accordionItem.forEach((el) => {
 })
 
 
-const [nome, email, phone] = document.querySelectorAll(".form input")
+const [nome, email] = document.querySelectorAll(".form input")
 const submit = document.querySelector(".form .enviar")
 const errorMessage = document.querySelector(".error")
+let phone;
 
+
+document.querySelector("#phone").addEventListener("keyup", (e) => {
+    phone = (e.target.value).replaceAll(" ", "").replace("(", "").replace(")", "").replace("-", "");
+})
 
 function ValidateEmail(inputText) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -72,7 +80,7 @@ function validatePhoneNumber(input_str) {
 }
 
 function validateForm(inputPhone) {
-    var phone = inputPhone.value;
+    var phone = inputPhone;
     if (!validatePhoneNumber(phone)) {
         throw new Error("Please enter a valid phone number")
     } else {
@@ -96,7 +104,7 @@ submit.addEventListener("click", () => {
         document.querySelector("#mce-FNAME").value = nome.value
         document.querySelector("#mce-PHONE").value = phone.value
 
-        document.querySelector("#mc-embedded-subscribe").click()
+        // document.querySelector("#mc-embedded-subscribe").click()
 
         document.querySelectorAll(".form input").forEach((el) => {
             el.style.display = "none"
@@ -105,7 +113,6 @@ submit.addEventListener("click", () => {
         document.querySelector(".form p.enviadoText").style.display = 'block'
 
     } catch (e) {
-        console.log(e.message)
         errorMessage.classList.add("active")
         errorMessage.innerHTML = `${e.message}`
     }

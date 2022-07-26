@@ -35,6 +35,8 @@
     <link rel="icon" href="./assets/img/icone2.png" sizes="32x32">
 
     <link rel="stylesheet" href="./assets/css/lp1/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 
 <body>
@@ -149,7 +151,7 @@
             <div class="marquee-text theClub"></div>
         </div>
 
-        <div class="cardsNFT first">
+        <div class="cardsNFT first mobileEdit">
             <div class="tagSection desktop">
                 <span>02</span>
                 <h2>THE CLUB</h2>
@@ -181,7 +183,7 @@
             <div class="marquee-text theNFTS"></div>
         </div>
 
-        <div class="cardsNFT">
+        <div class="cardsNFT mobileEdit">
             <div class="tagSection desktop">
                 <span>03</span>
                 <h2>THE NFTS</h2>
@@ -216,7 +218,7 @@
             <div class="marquee-text realArt"></div>
         </div>
 
-        <div class="cardsNFT">
+        <div class="cardsNFT mobileEdit">
             <div class="tagSection desktop">
                 <span>04</span>
                 <h2>REAL ART</h2>
@@ -240,20 +242,20 @@
         </div>
 
 
-        <div class="marquee empty mobileEdit">
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
-            <div class="marquee-text empty"></div>
+        <div class="marquee value mobileEdit">
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
+            <div class="marquee-text value"></div>
         </div>
 
 
-        <div class="cardsNFT">
+        <div class="cardsNFT mobileEdit">
             <div class="tagSection desktop">
                 <span>05</span>
                 <h2>PRICING</h2>
@@ -275,8 +277,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="marquee mobileEdit" id="scarcity">
             <div class="marquee-text value"></div>
             <div class="marquee-text value"></div>
@@ -290,12 +290,8 @@
         </div>
 
 
-        <div class="cardsNFT last">
-            <div class="tagSection desktop">
-                <span>06</span>
-                <h2>SCARCITY & VALUE</h2>
-            </div>
 
+        <div class="cardsNFT mobileEdit">
             <div class="card">
                 <div class="containerImage surfJunkieImg">
                     <img class="lazy" data-src="./assets/img/lp/pranchas.png" alt="" style="margin-bottom: -3px;">
@@ -330,6 +326,128 @@
             (adoption)
             percentage.
         </p>
+
+
+        <section class="cardsNfts desktop">
+            <div class="containerCard">
+                <div class="tagSection desktop">
+                    <span>02</span>
+                    <h2>THE CLUB</h2>
+                </div>
+
+                <div class="card">
+                    <div class="containerText">
+                        <p>Imagine a club working nonstop to offer you surf-related perks and benefits. Stuff like
+                            access to
+                            wave pools, chats with
+                            pro athletes, exclusive apparel, deals on surf trips, and once-in-a-lifetime experiences.
+                        </p>
+                        <a href="#form" class="btn-join">JOIN US</a>
+                    </div>
+
+                    <div class="containerImage surfJunkieImg">
+                        <img class="lazy" data-src="./assets/img/lp/surfJunkie.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerCard">
+                <div class="tagSection desktop">
+                    <span>03</span>
+                    <h2>THE NFTS</h2>
+                </div>
+
+                <div class="card cardNFT">
+                    <div class="containerImage surfJunkieImg containerForGifs">
+                        <!-- <img class="lazy" data-src="./assets/img/lp/thenfts.png" alt="" style="margin-bottom: -3px;"> -->
+                        <img src="./assets/img/lp/000.gif" alt="">
+                        <img src="./assets/img/lp/0001.gif" alt="" class="nftBorder">
+                    </div>
+                    <div class="containerText">
+                        <p>At the Surf Junkie Club, we'll use NFTs as our membership cards. Think of your Surf Junkie
+                            NFT as
+                            a
+                            lifetime ticket for
+                            all the fun and benefits the club will offer.</p>
+                        <a href="#form" class="btn-join">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="containerCard">
+                <div class="tagSection desktop">
+                    <span>04</span>
+                    <h2>REAL ART</h2>
+                </div>
+
+                <div class="card reverse">
+                    <div class="containerImage surfJunkieImg">
+                        <img class="lazy" data-src="./assets/img/lp/realArt2.png" alt="" style="margin-bottom: -1px;">
+                    </div>
+                    <div class="containerText">
+                        <p>All Surf Junkie NFTs are 1-of-1 artworks created by the artist and surfer Marcello Serpa.
+                            Marcello is
+                            one of the most
+                            awarded designers in the world and co-founder of the project. Each Surf Junkie NFT unlocks
+                            access to
+                            the hi-res artwork
+                            and grants you IP over the character.</p>
+                        <a href="#form" class="btn-join">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerCard">
+                <div class="tagSection desktop">
+                    <span>05</span>
+                    <h2>PRICING</h2>
+                </div>
+
+                <div class="card reverse">
+                    <div class="containerImage surfJunkieImg">
+                        <img class="lazy" data-src="./assets/img/lp/nft-rosa.png" alt="" style="margin-bottom: 0px;">
+                    </div>
+                    <div class="containerText">
+                        <p>The club is for the junkiest, not the richest. We will set a fair price (TBD) for the Surf
+                            Junkie
+                            NFTs.
+                            But note that
+                            after the initial sale, the market is king and prices can go up. So, help us spread the
+                            word.
+                            Let’s give
+                            all surf
+                            junkies a chance to get their NFTs at a fair price.</p>
+                        <a href="#form" class="btn-join">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerCard">
+                <div class="tagSection desktop">
+                    <span>06</span>
+                    <h2>Scarcity value</h2>
+                </div>
+
+                <div class="card reverse">
+                    <div class="containerImage surfJunkieImg">
+                        <img class="lazy" data-src="./assets/img/lp/pranchas.png" alt="" style="margin-bottom: 0px;">
+                    </div>
+                    <div class="containerText">
+                        <p>Out of the 35MM+ surfers in the world, the Surf Junkie Club will have room for only 0.03%. As
+                            NFTs pick up steam, more
+                            and more surfers will want to join the club, creating a high demand for our limited
+                            membership supply. Over time, beyond
+                            being a ticket for fun, your Surf Junkie NFT can become a priceless asset.</p>
+                        <a href="#form" class="btn-join">JOIN US</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
         <section class="founders desktop">
             <div class="tagSection desktop">
@@ -557,7 +675,7 @@
                     </div>
                     <div class="mc-field-group size1of2">
                         <label for="mce-PHONE">Phone Number </label>
-                        <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+                        <input type="text"  name="PHONE" class="" value="" id="mce-PHONE">
                     </div>
                     <div id="mce-responses" class="clear foot">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -601,7 +719,7 @@
 
                 <input type="text" placeholder="NAME OR NICKNAME">
                 <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="PHONE (+ country code)">
+                <input type="tel" id="phone" value="0" placeholder="PHONE (+ country code)">
                 <div class="error"></div>
                 <p class="enviadoText">Make sure you have whatsapp installed on your phone, We'll add you to our
                     broadcast list

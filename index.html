@@ -43,7 +43,10 @@
     <link rel="apple-touch-icon-precomposed" href="./assets/img/icone1200.png">
     <link rel="icon" href="./assets/img/icone2.png" sizes="32x32">
 
-    <link rel="stylesheet" href="./assets/css/lpOn/styles.css  ">
+    <link rel="stylesheet" href="./assets/css/lpOn/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 
 <body>
@@ -436,7 +439,7 @@
 
                 <input type="text" placeholder="NAME OR NICKNAME">
                 <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="PHONE (+ country code)">
+                <input type="tel" id="phone" value="0" placeholder="PHONE (+ country code)">
                 <div class="error"></div>
                 <p class="enviadoText">Make sure you have whatsapp installed on your phone, We'll add you to our
                     broadcast list

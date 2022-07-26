@@ -271,6 +271,10 @@ html {
 	content: "WELCOME TO THE SURF JUNKIE club • ";
 }
 
+.marquee-text.value:before {
+	content: "SCARCITY & VALUE • SCARCITY & VALUE •";
+}
+
 .marquee.welcome {
 	border-top: 0;
 	border-bottom: 3px solid #000;
@@ -433,6 +437,7 @@ html {
 		margin-right: 20px;
 	}
 }
+
 .MenuMobile {
 	display: block;
 	transition: .3s;
@@ -1326,6 +1331,8 @@ footer {
 		padding-top: 73px;
 		padding-bottom: 0;
 
+
+
 		.tagSection {
 			margin-bottom: 73px;
 		}
@@ -1339,38 +1346,7 @@ footer {
 		}
 	}
 
-	.cardsNFT .card {
-		display: flex;
-		flex-direction: row-reverse;
-
-		.containerText {
-			width: 45%;
-			padding: 53px 41px 51.27px 52px;
-			border: 3px solid #000000;
-			border-right: 0;
-
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-
-			p {
-				font-weight: 400;
-				font-size: 31.18px;
-				line-height: 35px;
-				margin-bottom: 43px;
-			}
-		}
-
-		.containerImage {
-			width: 50%;
-			border: 3px solid #000000;
-
-			img {
-				height: 100%;
-				object-fit: cover;
-			}
-		}
-	}
+	.cardsNFT .card {}
 
 	.cardsFounders {
 		display: flex;
@@ -1392,7 +1368,7 @@ footer {
 		}
 
 		.card {
-			width: 413.29px;
+			width: 31%;
 
 			h3 {
 				background: #FF6600;
@@ -1428,6 +1404,73 @@ footer {
 				z-index: 1;
 				position: relative;
 			}
+		}
+	}
+
+	.cardsNfts {
+		padding: 91px 58px 84px 57px;
+		background-color: #0062E1;
+		display: flex;
+		gap: 55px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+
+		.containerImage.surfJunkieImg {
+			margin-bottom: -3px;
+		}
+
+		.containerForGifs {
+			display: flex;
+
+			img {
+				width: 317.5px !important;
+				max-width: 317.5px !important;
+			}
+		}
+
+		.card.cardNFT {
+			flex-direction: column-reverse;
+			display: flex;
+
+			.containerImage {
+				margin-bottom: 1px !important;
+			}
+		}
+
+
+		.card {
+
+			border: 3px solid #000;
+
+			.containerText {
+				background: #FFFFFF;
+				padding-bottom: 74px;
+				padding: 53px 58px 52.27px 52px;
+				max-width: 525px;
+				width: 100%;
+				border-bottom: 3px solid #000;
+			}
+
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 31.18px;
+				line-height: 35px;
+				color: #000000;
+				font-family: sans-serif;
+				margin-bottom: 47px;
+			}
+
+			img {
+				max-width: 635px;
+				width: 100%;
+			}
+		}
+
+		.reverse {
+			display: flex;
+			flex-direction: column-reverse;
 		}
 	}
 
@@ -1586,10 +1629,8 @@ footer {
 		line-height: 95%;
 		letter-spacing: -0.03em;
 		text-transform: uppercase;
-		padding-top: 67.53px;
-		padding-bottom: 50.65px;
-		padding-left: 67.53px;
-		padding-right: 154px;
+		padding: 40px 67.5348px;
+		padding-right: 200px;
 
 		border: 0;
 
