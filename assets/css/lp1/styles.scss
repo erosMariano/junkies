@@ -1279,7 +1279,7 @@ footer {
 
 
 	.tagSection {
-		border: 4px solid #000;
+		border: 3px solid #000;
 		background-color: #fff;
 		font-family: 'Futura Passata';
 		font-style: normal;
@@ -1299,7 +1299,7 @@ footer {
 
 		h2 {
 			padding: 13.9062px 26.4219px;
-			border-left: 4px solid #000;
+			border-left: 3px solid #000;
 		}
 	}
 
@@ -1312,8 +1312,8 @@ footer {
 	}
 
 	.weAreCommunity {
-		border-top: 4px solid #000000;
-		border-bottom: 4px solid #000000;
+		border-top: 3px solid #000000;
+		border-bottom: 3px solid #000000;
 		padding: 85px 77px 97.27px 57px;
 	}
 
@@ -1361,7 +1361,7 @@ footer {
 
 		display: flex;
 		flex-direction: column;
-		border-top: 4px solid #000000;
+		border-top: 3px solid #000000;
 
 		.tagSection {
 			margin-bottom: 46px;
@@ -1476,7 +1476,7 @@ footer {
 
 	.porcentagens-desk {
 		background-color: #EF3443;
-		border: 4px solid #000000;
+		border: 3px solid #000000;
 		border-right: 0;
 		border-left: 0;
 		padding-top: 91px;
@@ -1581,7 +1581,7 @@ footer {
 	}
 
 	.form {
-		border: 4px solid #000000;
+		border: 3px solid #000000;
 		border-left: 0;
 		border-right: 0;
 		padding-top: 88px;
@@ -1601,7 +1601,7 @@ footer {
 
 		input {
 			height: 81.92px;
-			border: 3.32721px solid #000000;
+			border: 3px solid #000000;
 			font-size: 35.7675px;
 			line-height: 83px;
 		}
@@ -1651,11 +1651,11 @@ footer {
 		height: 40px;
 		width: 40px;
 		content: url("../../img/lp/plus.png");
-		top: 89px;
+		top: 67px;
 	}
 
 	.accordion .accordion-item-header.active::after {
-		top: 69px;
+		top: 46px;
 	}
 
 	.accordion .accordion-item-header span {
@@ -1695,5 +1695,21 @@ footer {
 		font-size: 37.4311px;
 		line-height: 83px;
 		letter-spacing: -0.03em;
+	}
+
+
+	.maquee1{
+		border-bottom: 0;
+	}
+	.maquee1-content li{
+		border-right: 3px solid #000;
+	}
+
+	.founders .card h3{
+		border: 3px solid #000;
+		border-bottom: 0;
+	}
+	.founders .card p{
+		border: 3px solid #000000;
 	}
 }
