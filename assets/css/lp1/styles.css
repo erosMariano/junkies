@@ -1494,9 +1494,9 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     gap: 55px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1762,6 +1762,7 @@ footer p {
   }
   .maquee1-content li {
     border-right: 3px solid #000;
+    border-left: 0;
   }
   .founders .card h3 {
     border: 3px solid #000;
